@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+    <h2>Photos</h2>
+    <section>
+        <ul>
+        {% for set in photosets %}
+            <img src="{{ set.cover }}" alt="Set Image">
+            <li><a href="/photos/set/{{ set.slug }}">{{ set.title }}</a> {{ set.date }}</li>
+        {% endfor %}
+        </ul>
+    </section>
+</article>
+{% endblock %}
