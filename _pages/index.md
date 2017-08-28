@@ -1,8 +1,9 @@
 ---
 title: About
+snippet: "I believe in using the right tool for the job, not just what is trending. A great team will always outperform the individual and that is why I focus on elevating my team up and not just myself."
 ---
 
-![Photo of James Duffy](/static/images/self.jpg)
+<!-- ![Photo of James Duffy](/static/images/self.jpg) -->
 
 I believe in using the right tool for the job, not just what is trending. A great team will always outperform the individual and that is why I focus on elevating my team up and not just myself.
 

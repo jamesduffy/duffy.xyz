@@ -1,9 +1,26 @@
 {% extends "base.html" %}
 
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block meta %}
+    {{ super() }}
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="{{ post.title }}" />
+    <meta property="og:description" content="{{ post.snippet }}" />
+
+    {% if post.featured_image %}
+        <meta property="og:image" content="https://duffy.xyz/static/images/posts/{{ post.featured_image }}" />
+    {% endif %}
+{% endblock %}
+
 {% block content %}
 <article>
+    {% if post.featured_image %}
+        <img src="/static/images/posts/{{ post.featured_image }}" />
+    {% endif %}
     <h1>{{ post.title }}</h1>
     <section>
+        <p class="text-muted text-center">{{ post.date.strftime('%Y-%m-%d') }}<p>
         {{ post.html | safe }}
     </section>
 </article>

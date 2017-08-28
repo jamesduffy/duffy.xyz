@@ -19,6 +19,17 @@ class Entry(object):
         return self.metadata.get('title', None)
 
     @property
+    def featured_image(self):
+        return self.metadata.get('featured-image', None)
+
+    @property
+    def snippet(self):
+        if self.metadata.get('snippet'):
+            return self.metadata.get('snippet')
+        else:
+            return self.content[:120] + (self.content[120:] and '...')
+
+    @property
     def slug(self):
         return self.path.split('/')[-1][:-3]
 
