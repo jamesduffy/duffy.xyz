@@ -1489,22 +1489,28 @@
 		"oAP": "\/duffyxyz\/__init__.py",
 		"oF": 0
 		},
+	"\/duffyxyz\/app.py": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/duffyxyz\/app.py",
+		"oF": 0
+		},
 	"\/duffyxyz\/config\/__init__.py": {
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/duffyxyz\/config\/__init__.py",
 		"oF": 0
 		},
+	"\/duffyxyz\/config\/base.py": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/duffyxyz\/config\/base.py",
+		"oF": 0
+		},
 	"\/duffyxyz\/config\/local.py": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/duffyxyz\/config\/local.py",
-		"oF": 0
-		},
-	"\/duffyxyz\/config\/prod.py": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/duffyxyz\/config\/prod.py",
 		"oF": 0
 		},
 	"\/duffyxyz\/helpers.py": {
@@ -2488,6 +2494,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/duffyxyz\/templates\/_partials\/header.html",
+		"oF": 0
+		},
+	"\/duffyxyz\/templates\/_partials\/navigation.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/duffyxyz\/templates\/_partials\/navigation.html",
 		"oF": 0
 		},
 	"\/duffyxyz\/templates\/base.html": {
