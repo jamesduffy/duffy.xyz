@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "pages/base.html" %}
 
 {% block title %}{{ post.title }}{% endblock %}
 
@@ -16,11 +16,13 @@
 {% block content %}
 <article>
     {% if post.featured_image %}
-        <img src="/static/images/posts/{{ post.featured_image }}" />
+        <img class="featured-image" src="/static/images/posts/{{ post.featured_image }}" />
     {% endif %}
-    <h1>{{ post.title }}</h1>
+    <header>
+        <h1>{{ post.title }}</h1>
+        <p class="text-muted text-center">Published on {{ post.date.strftime('%-d %B %Y') }}<p>
+    </header>
     <section>
-        <p class="text-muted text-center">{{ post.date.strftime('%Y-%m-%d') }}<p>
         {{ post.html | safe }}
     </section>
 </article>

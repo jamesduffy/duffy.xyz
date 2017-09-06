@@ -5,35 +5,38 @@ from datetime import datetime
 from flask import Flask, render_template, url_for
 
 from duffyxyz.views.pages import pages
-from duffyxyz.views.writings import writings
-# from duffyxyz.views.photos import photos
+from duffyxyz.views.journal import journal
 
 
 CONFIG_MODULE = os.getenv('CONFIG_MODULE', 'duffyxyz.config.local')
-
 
 # Create the app and load the configuration
 app = Flask(__name__)
 app.config.from_object(CONFIG_MODULE)
 
+
+print(app.config)
+
 # Register the different parts of the app
 app.register_blueprint(pages)
-app.register_blueprint(writings, url_prefix='/writings')
-# app.register_blueprint(photos, url_prefix='/photos')
+app.register_blueprint(journal, url_prefix='/journal')
 
 
 @app.context_processor
 def inject_now():
+    """Inject current datetime."""
     return {'now': datetime.utcnow()}
 
 
 @app.errorhandler(404)
 def error_not_found(error):
+    """Page Not Found."""
     return render_template('errors/404.html'), 404
 
 
 @app.errorhandler(500)
 def error_server(error):
+    """Server error page."""
     if error.description:
         message = error.description
     else:

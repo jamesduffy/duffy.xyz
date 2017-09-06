@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "pages/base.html" %}
 
 {% block title %}{{ page.title }}{% endblock %}
 
@@ -7,10 +7,6 @@
     <meta name="twitter:card" content="summary" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.snippet }}" />
-
-    {% if page.featured_image %}
-        <meta property="og:image" content="https://duffy.xyz/static/images/pages/{{ page.featured_image }}" />
-    {% endif %}
 {% endblock %}
 
 {% block content %}

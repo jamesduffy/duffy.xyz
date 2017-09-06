@@ -50,7 +50,7 @@ def freeze():
     @freezer.register_generator
     def view_post():
         for post in get_all_posts():
-            yield 'writings.view_post', {
+            yield 'journal.view_post', {
                 'post': '{}/{}'.format(post.date.year, post.slug)
             }
 

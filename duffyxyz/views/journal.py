@@ -5,20 +5,20 @@ from duffyxyz.helpers import get_all_posts
 from duffyxyz.models import Post
 
 
-writings = Blueprint('writings', __name__, template_folder='templates')
+journal = Blueprint('journal', __name__, template_folder='templates')
 
 
-@writings.route('/')
+@journal.route('/')
 def index():
     """Post list."""
-    return render_template('writings/index.html', posts=get_all_posts())
+    return render_template('journal/index.html', posts=get_all_posts())
 
 
-@writings.route('/<path:post>/')
+@journal.route('/<path:post>/')
 def view_post(post):
     """Single post."""
     try:
         post = Post('{}/{}.md'.format(current_app.config.get('POSTS_DIR'), post))
-        return render_template('writings/post.html', post=post)
+        return render_template('journal/post.html', post=post)
     except IOError:
         abort(404)

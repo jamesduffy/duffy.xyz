@@ -1,8 +1,12 @@
 
-default:
+build: clean
+	python manage.py freeze
+
+clean:
+	rm -r build/
+
+run:
 	python manage.py runserver
 
-deploy:
-	rm -r build/
-	python manage.py freeze
-	rsync -vr ./build/ duffyxyz:/webapps/duffy.xyz
+deploy: build
+	rsync -vr ./build/ duffyxyz:/webapps/duffy.xyz --delete
