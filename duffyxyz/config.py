@@ -2,10 +2,10 @@
 import os
 
 
-DEBUG = False
-SECRET_KEY = 'BASE_CONFIG_SECREY_KEY'
+DEBUG = True
+SECRET_KEY = 'CONFIG_SECREY_KEY'
 
-BASE_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..')
+BASE_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
 
 FREEZER_BASE_URL = 'https://duffy.xyz'
 FREEZER_DESTINATION = os.path.join(BASE_DIR, 'build')

@@ -8,7 +8,7 @@ from duffyxyz.views.pages import pages
 from duffyxyz.views.journal import journal
 
 
-CONFIG_MODULE = os.getenv('CONFIG_MODULE', 'duffyxyz.config.local')
+CONFIG_MODULE = os.getenv('CONFIG_MODULE', 'duffyxyz.config')
 
 # Create the app and load the configuration
 app = Flask(__name__)
