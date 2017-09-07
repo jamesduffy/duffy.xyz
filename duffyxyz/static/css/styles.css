@@ -86,11 +86,15 @@ pre code {
   background-color: #0c77b5;
 }
 .navbar {
-  display: flex;
-  flex-direction: row;
   font-size: 14px;
   padding: 1em;
   border-bottom: 1px solid #eaecee;
+}
+.navbar .navbar-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
 }
 .navbar h1 {
   display: flex;
