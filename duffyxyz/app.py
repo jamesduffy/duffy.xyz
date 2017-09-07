@@ -5,7 +5,7 @@ from datetime import datetime
 from flask import Flask, render_template, url_for
 
 from duffyxyz.views.pages import pages
-from duffyxyz.views.journal import journal
+from duffyxyz.views.blog import blog
 
 
 CONFIG_MODULE = os.getenv('CONFIG_MODULE', 'duffyxyz.config')
@@ -15,11 +15,9 @@ app = Flask(__name__)
 app.config.from_object(CONFIG_MODULE)
 
 
-print(app.config)
-
 # Register the different parts of the app
 app.register_blueprint(pages)
-app.register_blueprint(journal, url_prefix='/journal')
+app.register_blueprint(blog, url_prefix='/journal')
 
 
 @app.context_processor
