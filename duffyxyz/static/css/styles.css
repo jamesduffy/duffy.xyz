@@ -48,22 +48,22 @@ a:visited:hover {
   border-bottom: 0.05em solid #0c77b5;
 }
 h1 {
-  font-size: 2.4rem;
-}
-h2 {
-  font-size: 2.2rem;
-}
-h3 {
   font-size: 2rem;
 }
+h2 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
 }
 h5 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 h6 {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 pre {
   line-height: 1.2rem;
@@ -199,8 +199,7 @@ h6 {
   max-width: 650px;
   margin: .7rem auto 0;
 }
-h1,
-h2 {
+h1 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -396,30 +395,6 @@ body.dark footer {
 @media (max-width: 1024px) {
   body {
     font-size: 16px;
-  }
-  h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  h2 {
-    font-size: 1.7rem;
-    line-height: 2rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  h4 {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-  }
-  h5 {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  h6 {
-    font-size: 1rem;
-    line-height: 1.3rem;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {

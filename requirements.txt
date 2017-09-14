@@ -15,6 +15,7 @@ Flask-DebugToolbar==0.10.1
 Flask-Login==0.4.0
 Flask-Script==2.0.5
 Flask-Scss==0.5
+Flask-thumbnails==1.0.3
 Frozen-Flask==0.15
 idna==2.5
 ipaddress==1.0.18
@@ -22,9 +23,11 @@ itsdangerous==0.24
 Jinja2==2.9.6
 Markdown==2.6.8
 MarkupSafe==1.0
+olefile==0.44
 packaging==16.8
 paramiko==2.2.1
 pathlib==1.0.1
+Pillow==4.2.1
 pyasn1==0.2.3
 pycparser==2.18
 PyNaCl==1.1.2
