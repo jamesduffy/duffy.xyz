@@ -15,7 +15,7 @@ I graduated from California State University, Stanislaus with a B.S. degree in C
 ## Hardware
 
 - 💻 MacBookPro 15" Retina (Mid 2015)
-- 📞 Google Nexus 6P
+- 📞 Google Pixel XL (128GB)
 - 🎧 Sony MDR 1000x
 - 📷 Sony Alpha a6300
 
