@@ -161,6 +161,20 @@ ul.posts img {
   float: right;
   max-width: 250px;
 }
+.photo-card {
+  text-align: center;
+}
+.photo-card img {
+  max-width: 100%;
+}
+.photo-card h2 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.photo-card h5 {
+  font-size: .8rem;
+  line-height: .8rem;
+}
 .photo-block {
   width: 48%;
   height: 500px;
