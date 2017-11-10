@@ -3,6 +3,8 @@ title: Amateur Radio
 snippet: "An overview of the radio equipment and resources I have used."
 ---
 
+My Call Sign: KM6OBS
+
 ### Why
 A lot of people will cite that they decided to get their Amateur radio license to prepare for a disaster or an emergency. I agree that this is still a big part of the hobby, but Amateur radio (HAM Radio) is a hobby and not a job like firefighting or being a police officer.
 
@@ -19,7 +21,8 @@ Below are a list of things that I have found useful while studying to become a H
 - [US Amateur Radio Band Plan](https://play.google.com/store/apps/details?id=com.kimbrelk.ham)
 
 #### Websites
-- [Advanced Call Sign Search &amp; Availability](http://www.ae7q.com/query/)
+- [AE7Q Advanced Call Sign Search &amp; Availability](http://www.ae7q.com/query/)
+- [FCC License Manager](https://wireless2.fcc.gov/UlsEntry/licManager/login.jsp)
 - [FCC Advanced License Search](http://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp)
 - [QRZ.com](https://www.qrz.com/)
 
