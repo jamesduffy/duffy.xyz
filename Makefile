@@ -1,12 +1,12 @@
 
 build: clean
-	python manage.py freeze
+	hugo
 
 clean:
-	rm -r build/
+	rm -r public/
 
 run:
-	python manage.py runserver
+	hugo --watch serve
 
 deploy: build
-	rsync -vr ./build/ duffyxyz:/webapps/duffy.xyz --delete
+	rsync -vr ./public/ duffyxyz:/webapps/duffy.xyz --delete

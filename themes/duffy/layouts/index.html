@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+    <article>
+        <h1>{{ .Title }}</h1>
+
+        {{ partial "table_of_contents.html" . }}
+
+        <section>
+            {{ .Content }}
+        </section>
+    </article>
+
+{{ end }}

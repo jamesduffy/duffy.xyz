@@ -1,0 +1,5 @@
+baseURL = "https://duffy.xyz/"
+languageCode = "en-us"
+title = "James Duffy"
+theme = "duffy"
+bloggroupby = "year"

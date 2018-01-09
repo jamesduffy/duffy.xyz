@@ -1,0 +1,25 @@
+{{ define "main" }}
+    <article>
+        <h1>{{ .Title }}</h1>
+        <p class="text-muted text-center">Published on {{ .Date.Format "Jan 2, 2006" }}<p>
+
+        {{ partial "table_of_contents.html" . }}
+
+        <section>
+            {{ .Content }}
+        </section>
+
+        <section>
+            <ul  class="post-list">
+                <!-- orders content according to the "date" field in front matter -->
+                {{ range .Data.Pages.ByPublishDate.Reverse }}
+                    <li>
+                        <h6><a href="{{ .Permalink }}">{{ .Title }}</a></h6>
+                        {{ .Summary }}
+                    </li>
+                {{ end }}
+            </ul>
+        </section>
+    </article>
+
+{{ end }}
