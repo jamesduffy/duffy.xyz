@@ -55,7 +55,7 @@ Below are a list of things that I have found useful while studying to become a H
 # Fun things to do
 After you get licensed there is a whole world of things to explore. Below I have started to make a list of things I have experimented with and.
 
-## [APRS](http://aprs.org/)
-APRS (Automatic Packet Reporting System) is a digital communication system that from as far as I can tell right now is mainly used for sharing your position, basic statuses and simple messages.
+## APRS
+[APRS](http://aprs.org/) (Automatic Packet Reporting System) is a digital communication system that from as far as I can tell right now is mainly used for sharing your position, basic statuses and simple messages.
 
 One of the fun things that I have found is that there is a way to send SMS messages to friends and family through a SMS gateway. This could be something fun to try out and can be useful if you do not have cell service, but can get your message into the APRS network. [Check out the SMS gateway for more instructions](http://smsgte.wixsite.com/smsgte).
