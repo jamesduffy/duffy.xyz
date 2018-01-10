@@ -11,6 +11,7 @@ menu: ["footer"]
 - Added link in footer for changelog
 - Added link in footer to Flickr profile
 - Update Ham Radio page
+- Update base font size from 18px to 16px
 - Removed photography navigation link
 
 ## September 4th, 2017
