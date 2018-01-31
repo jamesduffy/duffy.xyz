@@ -67,8 +67,12 @@ After you get licensed there is a whole world of things to explore. Below I have
 
 One of the fun things that I have found is that there is a way to send SMS messages to friends and family through a SMS gateway. This could be something fun to try out and can be useful if you do not have cell service, but can get your message into the APRS network. [Check out the SMS gateway for more instructions](http://smsgte.wixsite.com/smsgte).
 
+To be continued...
+
 ## D-Star
 D-Star is probably one of the oldest digital modes available to amateurs. If you have a D-Star repeater in your area and a D-Star capable radio you can easily get access to worldwide communication through the internet.
+
+To be continued...
 
 ## HF (High Frequency)
 After you get your General class license you are granted access to the HF (High Frequency) bands. With the HF bands you can get worldwide communication (without using repeaters or internet gateways). This is the biggest reason to get your General class license, but you are going to need more than your handheld radio to transmit.
@@ -77,9 +81,13 @@ You are going to need to invest a bit of money to get started. You should get a 
 
 I don't have any recommendations on gear yet.
 
+To be continued...
+
 ## Satellite
 Working satellites is something I have yet to do, but I am extremely interested in. I mean, communicating through space with your handheld transceiver?! I am still doing research and understanding what I can do.
 
 - [Amateur radio satellite passes for the next 6 hours](http://www.n2yo.com/passes/amateur-radio.php)
 - [Arrow Handeld Antenna](http://arrowantennas.com/arrowii/146-437.html)
 - [Radio Amateur Satellite Corporation (AMSAT)](https://www.amsat.org/)
+
+To be continued...
