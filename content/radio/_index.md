@@ -30,6 +30,9 @@ Below are a list of things that I have found useful while studying to become a H
 - [HamRadioExam - Technician](https://itunes.apple.com/us/app/ham-radio-exam-tech/id601991935)
 - [HamRadioExam - General](https://itunes.apple.com/us/app/ham-radio-exam-general/id604697509)
 
+## Mac/Linux
+- [CHIRP Programming Software](https://chirp.danplanet.com/projects/chirp/wiki/Home)
+
 ## Websites
 - [AE7Q Advanced Call Sign Search &amp; Availability](http://www.ae7q.com/query/)
 - [DX Maps](https://www.dxmaps.com/)
@@ -38,6 +41,9 @@ Below are a list of things that I have found useful while studying to become a H
 - [HF Propagation Predictions](http://www.voacap.com/p2p/index.html)
 - [QRZ.com](https://www.qrz.com/)
 - [VHF Propagation Map](http://aprs.mountainlake.k12.mn.us/)
+
+## YouTubers
+- [vk3ye](https://www.youtube.com/user/vk3ye)
 
 # Equipment
 
@@ -60,3 +66,20 @@ After you get licensed there is a whole world of things to explore. Below I have
 [APRS](http://aprs.org/) (Automatic Packet Reporting System) is a digital communication system that from as far as I can tell right now is mainly used for sharing your position, basic statuses and simple messages.
 
 One of the fun things that I have found is that there is a way to send SMS messages to friends and family through a SMS gateway. This could be something fun to try out and can be useful if you do not have cell service, but can get your message into the APRS network. [Check out the SMS gateway for more instructions](http://smsgte.wixsite.com/smsgte).
+
+## D-Star
+D-Star is probably one of the oldest digital modes available to amateurs. If you have a D-Star repeater in your area and a D-Star capable radio you can easily get access to worldwide communication through the internet.
+
+## HF (High Frequency)
+After you get your General class license you are granted access to the HF (High Frequency) bands. With the HF bands you can get worldwide communication (without using repeaters or internet gateways). This is the biggest reason to get your General class license, but you are going to need more than your handheld radio to transmit.
+
+You are going to need to invest a bit of money to get started. You should get a good antenna system and a decent transceiver. If you have the extra cash I would probably allocate it to the antenna versus the transceiver. A better antenna will get you a lot more coverage than a slightly better transceiver.
+
+I don't have any recommendations on gear yet.
+
+## Satellite
+Working satellites is something I have yet to do, but I am extremely interested in. I mean, communicating through space with your handheld transceiver?! I am still doing research and understanding what I can do.
+
+- [Amateur radio satellite passes for the next 6 hours](http://www.n2yo.com/passes/amateur-radio.php)
+- [Arrow Handeld Antenna](http://arrowantennas.com/arrowii/146-437.html)
+- [Radio Amateur Satellite Corporation (AMSAT)](https://www.amsat.org/)
