@@ -1,9 +1,21 @@
 {{ if .Params.toc }}
-<aside class="table-of-contents">
-    <header>
-        <h2>Table of Contents</h2>
-    </header>
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-title">Table of Contents</div>
+  </div>
 
+  <div class="panel-body">
     {{.TableOfContents}}
-</aside>
+  </div>
+
+  <div class="panel-footer">
+    <!-- buttons or inputs -->
+  </div>
+</div>
+
+<ul class="menu">
+  <li class="divider" data-content="Table of Contents"></li>
+
+  {{.TableOfContents}}
+</ul>
 {{ end }}

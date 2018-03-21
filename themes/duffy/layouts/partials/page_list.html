@@ -1,12 +1,9 @@
-<section>
-    <ul  class="post-list">
-        <!-- orders content according to the "date" field in front matter -->
-        {{ range .Data.Pages.ByPublishDate }}
-            <li>
-                <h6><a href="{{ .Permalink }}">{{ .Title }}</a></h6>
-                <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
-                {{ .Summary }}
-            </li>
-        {{ end }}
-    </ul>
-</section>
+<ul class="menu">
+  <li class="divider" data-content="Other Pages"></li>
+
+  {{ range .Data.Pages.ByPublishDate }}
+    <li class="menu-item">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+</ul>

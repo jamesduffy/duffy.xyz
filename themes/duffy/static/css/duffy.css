@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed|IBM+Plex+Serif');
+
+
+body {
+  margin: 1rem;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.75rem;
+
+    /*font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Serif', serif;*/
+}
+
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #161718;
+  margin-bottom: 1rem;
+}
+
+h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #96a1ad;
+}
+
+
+/*a,
+a:visited {
+  color: #0c77b5;
+  text-decoration: none;
+  border-bottom: .05em transparent;
+}
+a:active,
+a:visited:active,
+a:hover,
+a:visited:hover {
+  border-bottom: 0.05em solid #0c77b5;
+}*/
+
+
+.navbar {
+/*  border-bottom: 1px solid #eaecee;
+*/  margin-bottom: 2rem;
+}
+
+.navbar-brand, .navbar-brand:visited {
+  color: #fff;
+  background-color: #0c77b5;
+  border: none;
+}
+
+    .navbar-brand:hover, .navbar-brand:active {
+        border: none;
+    }
+
+
+article img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}

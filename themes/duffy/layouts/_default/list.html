@@ -1,15 +1,22 @@
 {{ define "main" }}
+<div class="container grig-lg">
+  <div class="columns">
+    {{ partial "table_of_contents.html" . }}
 
-    <article>
-        <h1>{{ .Title }}</h1>
+    <div class="column col-xl-8 col-sm-12 col-mx-auto">
+        <article>
+            <h1>{{ .Title }}</h1>
 
-        {{ partial "table_of_contents.html" . }}
+            {{ partial "page_list.html" . }}
 
-        <section>
-            {{ .Content }}
-        </section>
+            {{ partial "table_of_contents.html" . }}
 
-        {{ partial "page_list.html" . }}
-    </article>
+            <section>
+                {{ .Content }}
+            </section>
+        </article>
+    </div>
+  </div>
+</div>
 
 {{ end }}

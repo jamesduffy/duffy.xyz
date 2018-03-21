@@ -1,24 +1,30 @@
 {{ define "main" }}
-    <article>
-        <h1>{{ .Title }}</h1>
 
-        {{ partial "table_of_contents.html" . }}
+<div class="container grig-lg">
+  <div class="columns">
+    {{ partial "table_of_contents.html" . }}
 
-        <section>
+    <div class="column col-xl-8 col-sm-12 col-mx-auto">
+        <article>
+            <h1>{{ .Title }}</h1>
+
             {{ .Content }}
-        </section>
 
-        <section>
-            <ul  class="post-list">
-                <!-- orders content according to the "date" field in front matter -->
-                {{ range .Data.Pages.ByPublishDate.Reverse }}
-                    <li>
-                        <h6><a href="{{ .Permalink }}">{{ .Title }}</a></h6>
-                        {{ .Summary }}
-                    </li>
-                {{ end }}
-            </ul>
-        </section>
-    </article>
 
+
+
+            {{ range .Data.Pages.ByPublishDate.Reverse }}
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-title h5"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+                  </div>
+                  <div class="card-body">
+                    {{ .Summary }}
+                  </div>
+                </div>
+            {{ end }}
+        </article>
+    </div>
+  </div>
+</div>
 {{ end }}

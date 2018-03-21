@@ -14,12 +14,29 @@
   </head>
 
   <body>
-    {{ partial "header.html" . }}
 
-    {{ block "main" . }}{{ end }}
+  <div class="container grid-lg">
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand">James Duffy</a>
+      </section>
+
+      <section class="navbar-section">
+        {{ range .Site.Menus.main }}
+          <a href="{{.URL}}" class="btn btn-link">{{ .Pre }}<span>{{ .Name }}</span></a>
+        {{ end }}
+      </section>
+    </header>
+  </div>
+
+  {{ block "main" . }}{{ end }}
+
+
+    <!-- {{ partial "header.html" . }}
+
 
     {{ partial "footer.html" . }}
 
-    {{ partial "scripts.html" . }}
+    {{ partial "scripts.html" . }} -->
   </body>
 </html>
