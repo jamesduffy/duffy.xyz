@@ -1,14 +1,25 @@
 {{ define "main" }}
-	default SINGLE
-    <article>
-        <h1>{{ .Title }}</h1>
-
+<div class="container grid-lg">
+  <div class="columns">
+    <div class="column col-sm-12">
+        <h1 class="page-title text-center">{{ .Title }}</h1>
+    </div>
+  </div>
+  <div class="columns">
+    {{ if .Params.sidebar }}
+    <div class="column col-3 col-sm-12">
         {{ partial "table_of_contents.html" . }}
-
-        <section>
-            {{ .Content }}
-        </section>
-    </article>
+    </div>
+    {{ end }}
 
 
+    <div class="column col-9 col-sm-12 col-mx-auto">
+        <article>
+            <section>
+                {{ .Content }}
+            </section>
+        </article>
+    </div>
+  </div>
+</div>
 {{ end }}

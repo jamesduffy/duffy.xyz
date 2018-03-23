@@ -18,19 +18,18 @@ I am assuming you can set up the Django ``urls.py`` file yourself. We have at le
 
 In our first view we need to do a few things. We need to set up our twitter application’s consumer token, consumer secret and the callback url.
 
-<pre><code>
+```
 auth = tweepy.OAuthHandler('consumer_token', 'consumer_secret', 'callback_url')
-</code></pre>
+```
 
 This authenticates your application with twitter so you can later authenticate a user. To authenticate a user you need to redirect them to twitter’s website to accept logging into your application. Tweepy has an easy way to get this url using ``.get_authorization_url()``. You should wrap any calls to outside services in try/except because you can never be sure when they will fail because of no fault of your own and when it does you can show a nice error message rather than everything crashing to a halt.
 
-<pre><code>
-  try:
-
-  redirect_url = auth.get_authorization_url()
-  except tweedy.TweepError:
-      return HttpResponse('error', status=500)
-</code></pre>
+```
+try:
+    redirect_url = auth.get_authorization_url()
+    except tweedy.TweepError:
+        return HttpResponse('error', status=500)
+```
 
 Your finished view file should look something like this:
 

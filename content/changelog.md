@@ -5,6 +5,11 @@ draft: false
 menu: ["footer"]
 ---
 
+## March 23rd, 2018
+- Updated theme:
+    - Easier to read fonts
+    - Better Table of Contents and Sub-Page lists
+
 ## January 9th, 2018
 - Convert from custom python site generator to Hugo
 - Added Ham Radio navigation link

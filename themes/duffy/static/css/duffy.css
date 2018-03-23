@@ -2,60 +2,126 @@
 
 
 body {
-  margin: 1rem;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 16px;
   color: #333;
-  line-height: 1.75rem;
+  background: #fafafa;
+  margin: 1rem 0 1rem 0;
+  /*line-height: 1.75rem;*/
 
     /*font-family: 'IBM Plex Mono', monospace;
     font-family: 'IBM Plex Serif', serif;*/
 }
 
 h1, h2, h3 {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   color: #161718;
   margin-bottom: 1rem;
 }
 
 h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   color: #96a1ad;
 }
 
 
-/*a,
+a,
 a:visited {
-  color: #0c77b5;
+  border-bottom: 1px solid #5755d9;
   text-decoration: none;
-  border-bottom: .05em transparent;
 }
-a:active,
-a:visited:active,
-a:hover,
-a:visited:hover {
-  border-bottom: 0.05em solid #0c77b5;
-}*/
+  a:active,
+  a:visited:active,
+  a:hover,
+  a:visited:hover {
+    background: #f1f1fc;
+    color: #5755d9;
+    text-decoration: none;
+  }
 
+.container {
+  max-width: 960px;
+}
 
 .navbar {
-/*  border-bottom: 1px solid #eaecee;
-*/  margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
-
-.navbar-brand, .navbar-brand:visited {
-  color: #fff;
-  background-color: #0c77b5;
-  border: none;
-}
-
+  .navbar-brand, .navbar-brand:visited {
+    color: #fff;
+    background-color: #0c77b5;
+    border: none;
+  }
     .navbar-brand:hover, .navbar-brand:active {
-        border: none;
+      border: none;
     }
 
 
-article img {
-    display: block;
-    height: auto;
-    max-width: 100%;
+
+.page-title {
+  font-size: 2.5rem;
+}
+
+#TableOfContents ul {
+  list-style: none;
+}
+
+article {
+  background: #fff;
+    border-radius: .1rem;
+    box-shadow: 0 0.05rem 0.2rem rgba(69,77,93,.3);
+    min-width: 180px;
+    padding: .8rem;
+    transform: translateY(.2rem);
+    z-index: 300;
+}
+
+  article img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+  }
+
+.menu {
+  margin-bottom: 1rem;
+}
+  .menu-item a {
+    border: none;
+  }
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item {
+  text-transform: capitalize;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: .6rem;
+}
+
+
+ul.social-links {
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 1.2rem;
+  padding: 0;
+
+}
+ul.social-links li {
+  display: inline;
+  margin: .25rem;
+  padding: .25rem;
+}
+ul.social-links li a {
+  padding: .25rem;
+  color: #333;
+  border: none;
+}
+ul.social-links li a:active,
+ul.social-links li a:hover {
+  border: none;
+  color: #0c77b5;
+  background: none;
 }

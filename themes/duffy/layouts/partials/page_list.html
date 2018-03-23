@@ -1,5 +1,6 @@
+{{ if .Data.Pages }}
 <ul class="menu">
-  <li class="divider" data-content="Other Pages"></li>
+  <li class="divider" data-content="Sub Pages"></li>
 
   {{ range .Data.Pages.ByPublishDate }}
     <li class="menu-item">
@@ -7,3 +8,4 @@
     </li>
   {{ end }}
 </ul>
+{{ end }}

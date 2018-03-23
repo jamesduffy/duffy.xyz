@@ -1,11 +1,9 @@
 {{ define "main" }}
 <div class="container grig-lg">
   <div class="columns">
-    <div class="column col-xl-8 col-sm-12 col-mx-auto">
+    <div class="column col-9 col-sm-12 col-mx-auto">
         <article>
-            <h1>{{ .Title }}</h1>
-
-            {{ partial "table_of_contents.html" . }}
+            <h1 class="text-center">{{ .Title }}</h1>
 
             <section>
                 {{ .Content }}

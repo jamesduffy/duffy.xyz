@@ -1,14 +1,14 @@
-<!-- <div class="navbar">
-    <div class="navbar-container">
-        <h1 class="site-header"><a href="/" style="border-bottom:none;">James Duffy</a></h1>
 
-        <nav>
-            <ul class="menu">
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-                <li><a href="{{.URL}}">{{ .Pre }}<span>{{ .Name }}</span></a></li>
-            {{ end }}
-            </ul>
-        </nav>
-    </div>
-</div> -->
+  <div class="container grid-lg">
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand">James Duffy</a>
+      </section>
+
+      <section class="navbar-section">
+        {{ range .Site.Menus.main }}
+          <a href="{{.URL}}" class="btn btn-link">{{ .Pre }}<span>{{ .Name }}</span></a>
+        {{ end }}
+      </section>
+    </header>
+  </div>
