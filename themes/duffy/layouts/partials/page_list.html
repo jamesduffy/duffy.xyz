@@ -1,8 +1,8 @@
 {{ if .Data.Pages }}
 <ul class="menu">
-  <li class="divider" data-content="Sub Pages"></li>
+  <li class="divider" data-content="Pages"></li>
 
-  {{ range .Data.Pages.ByPublishDate }}
+  {{ range .Data.Pages }}
     <li class="menu-item">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
     </li>

@@ -1,16 +1,17 @@
 {{ define "main" }}
 <div class="container grid-lg">
   <div class="columns">
-    <div class="column col-sm-12">
-        <h1 class="page-title text-center">{{ .Title }}</h1>
+    <div class="column col-sm-12 text-center">
+        <h1 class="page-title">{{ .Title }}</h1>
     </div>
   </div>
   <div class="columns">
-    {{ if .Params.toc }}
+    {{ if .Params.sidebar }}
     <div class="column col-3 col-sm-12">
         {{ partial "table_of_contents.html" . }}
     </div>
     {{ end }}
+
 
     <div class="column col-9 col-sm-12 col-mx-auto">
         <article>
@@ -19,10 +20,6 @@
             <section>
                 {{ .Content }}
             </section>
-
-            {{ partial "page_list.html" . }}
-
-            {{ partial "pagination.html" . }}
         </article>
     </div>
   </div>

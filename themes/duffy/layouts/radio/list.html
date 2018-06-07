@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div class="container grig-lg">
+  <div class="columns">
+
+    <div class="column col-8 col-sm-12 col-mx-auto">
+        <h1 class="text-center">{{ .Title }}</h1>
+
+        {{ .Content }}
+
+        {{ range .Data.Pages }}
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title h5"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+              </div>
+              <div class="card-body">
+                {{ .Summary }}
+              </div>
+            </div>
+        {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

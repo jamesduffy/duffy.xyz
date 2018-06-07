@@ -8,9 +8,11 @@
   <div class="columns">
     {{ if .Params.sidebar }}
     <div class="column col-3 col-sm-12">
-        {{ partial "table_of_contents.html" . }}
-
         {{ partial "page_list.html" . }}
+
+        {{ if .Params.toc }}
+        {{ partial "table_of_contents.html" . }}
+        {{ end }}
     </div>
     {{ end }}
 
