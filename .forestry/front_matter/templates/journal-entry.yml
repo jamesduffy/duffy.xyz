@@ -1,0 +1,12 @@
+---
+label: Journal Entry
+hide_body: false
+fields:
+- type: datetime
+  label: Published Date
+  name: date
+  config:
+    required: true
+- type: file
+  name: featured_image
+  label: Featured Image
