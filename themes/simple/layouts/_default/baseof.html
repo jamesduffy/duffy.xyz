@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/static/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+
+  <link rel="manifest" href="/static/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/static/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="twitter:site" content="@duffy0" />
+  <meta name="twitter:creator" content="@duffy0" />
+  <meta property="og:url" content="https://duffy.xyz{{ .URL }}" />
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title>
+    {{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}
+  </title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1><a href="/">duffy.xyz</a></h1>
+
+      {{ range .Site.Menus.main }}
+        <a href="{{.URL}}">{{ .Pre }}<span>{{ .Name }}</span></a>
+      {{ end }}
+    </header>
+
+    <main>
+    {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer id="site-footer">
+      <hr>
+
+      <p>Hey there, I am <span class="text-mono"><a rel="nofollow" target="_blank" href="https://twitter.com/duffy0">@duffy0</a></span>! I am a Lead DevOps Engineer living in San Francisco. I automate infrastructure and make software deployments seamless. I also enjoy photography. <a href="/about">Learn more</a>.</p>
+
+      <p>Copyright &copy; James Duffy</p>
+      <p><span class="text-mono"><a href="/changelog">{{ .Site.LastChange }}</a></span></p>
+    </footer>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-23906018-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </div>
+</body>
+</html>

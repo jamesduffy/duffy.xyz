@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article>
+    <header>
+        <h1 class="page-title">{{ .Title }}</h1>
+
+        {{ if not .Params.hide_date }}
+        <date>{{ .PublishDate.Format "January 2, 2006" }}</date>
+        {{ end }}
+    </header>
+
+    {{ if .Params.toc }}
+        {{ partial "table_of_contents.html" . }}
+    {{ end }}
+
+    <main>{{ .Content }}</main>
+
+</article>
+{{ end }}

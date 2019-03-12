@@ -1,0 +1,9 @@
+{{ if .Data.Pages }}
+<ul class="menu">
+  {{ range .Data.Pages }}
+    <li class="menu-item">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -1,0 +1,13 @@
+
+name = "Simple"
+license = "MIT"
+licenselink = "https://github.com/jamesduffy/duffy.xyz/blob/master/themes/simple/LICENSE.md"
+description = ""
+homepage = "http://duffy.xyz/"
+tags = []
+features = []
+min_version = "0.54.0"
+
+[author]
+  name = "James Duffy"
+  homepage = "http://duffy.xyz/"

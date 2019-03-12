@@ -3,7 +3,12 @@ title: "Changelog"
 date: 2018-01-08T13:53:33-08:00
 draft: false
 menu: ["footer"]
+hide_date: true
 ---
+
+## March 12, 2019
+- Moved back to using Hugo from Ghost
+- Rewrote theme without the use of a framework (other than normalize.css)
 
 ## March 23rd, 2018
 - Updated theme:
@@ -23,24 +28,3 @@ menu: ["footer"]
 - Added changelog
 - Renamed writings to journal
 - Added social links in footer
-
-<!-- <div class="timeline">
-  <div class="timeline-item" id="timeline-example-1">
-    <div class="timeline-left">
-      <a class="timeline-icon" href="#timeline-example-1"></a>
-    </div>
-    <div class="timeline-content">
-    </div>
-  </div>
-
-  <div class="timeline-item" id="timeline-example-2">
-    <div class="timeline-left">
-      <a class="timeline-icon icon-lg" href="#timeline-example-2">
-        <i class="icon icon-check"></i>
-      </a>
-    </div>
-    <div class="timeline-content">
-    </div>
-  </div>
-  ...
-</div> -->

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Share+Tech+Mono');
+
+
+body {
+    color: #161718;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    margin: 2rem 0;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+a, a:visited {
+    color: #0c77b5;
+    text-decoration: none;
+    border-bottom: .05em transparent;
+}
+    a:active, a:hover {
+        border-bottom: .05em solid #0c77b5;
+    }
+
+
+code {
+    font-family: monospace;
+    padding: .2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
+}
+
+pre {
+    background-color: rgba(27,31,35,.05);
+    overflow-x: scroll;
+}
+    pre code {
+        background-color: transparent;
+    }
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 1em;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-top: 1.5rem;
+}
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem;}
+    h3 { font-size: 1.4rem; }
+    h4 { font-size: 1.2rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: .5rem; }
+
+
+img {
+    max-width: 100%;
+}
+
+
+.text-center { text-align: center; }
+.text-mono { font-family: 'Share Tech Mono', serif; }
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.site-header {
+    display: block;
+    position: relative;
+    padding: 15px 0px 15px 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+    .site-header h1 a, .site-header h1 a:visited {
+        color: #161718;
+        font-family: 'Share Tech Mono', serif;
+        font-size: 2rem;
+    }
+        .site-header h1 a:hover, .site-header h1 a:active {
+            border-bottom: none;
+        }
+
+    .site-header a {
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+
+article {
+    margin-bottom: 2rem;
+}
+
+    article h1 { font-size: 1.8rem; }
+    article h2 { font-size: 1.4rem;}
+    article h3 { font-size: 1.2rem; }
+    article h4 { font-size: 1rem; }
+    article h5 { font-size: .8rem; }
+    article h6 { font-size: .5rem; }
+
+    article header {
+        margin-block-end: 1rem;
+    }
+        article article header {
+            margin-block-end: 0;
+        }
+        article header h1,
+        article header h3 {
+            margin-block-end: 0;
+        }
+
+        article date {
+            font-style: italic;
+            font-size: .9rem;
+            color: #222;
+        }
+
+        article article main {
+            font-size: 1rem;
+            margin: 1rem 1rem 2rem 1rem;
+        }
+
+    details {
+        color: #666
+    }
+
+    time {
+        color: #666;
+    }
+
+    article p {
+        margin-block-start: 0;
+    }
+
+
+
+footer#site-footer {
+    font-size: .8rem;
+    padding: 1rem;
+
+    min-height: 250px;
+}
+    footer#site-footer a,
+    footer#site-footer a:visted,
+    footer#site-footer a:active,
+    footer#site-footer a:hover {
+        color: #F7F8FA;
+        border: none;
+    }
+
+
+ul.social-links {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    padding: 0;
+
+    li {
+        display: inline;
+
+        a {
+            padding: .25rem;
+            color: @font-color;
+
+            &:active, &:hover {
+                border: none;
+                color: @primary-color
+            }
+        }
+    }
+}
+
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+
+ul.breadcrumb {
+  /*padding: 10px 16px;*/
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  /*padding: px;*/
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
