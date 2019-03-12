@@ -10,15 +10,15 @@ My favorite and least useful thing I have set up on my laptop is to run `fortune
 
 In my .bashrc file I have the following snipped:
 
-<pre><code>
+```
 if [ -x /usr/local/bin/ponysay -a -x /usr/local/bin/fortune ]; then
     fortune | ponysay
 fi
-</code></pre>
+```
 
 If you want one script to install everything for you:
 
-<pre><code>
+```
 #!/bin/bash
 
 echo 'Installing homebrew'
@@ -30,4 +30,4 @@ brew install fortune ponysay
 echo "if [ -x /usr/local/bin/ponysay -a -x /usr/local/bin/fortune ]; then\n
     fortune | ponysay\n
 fi\n" >> ~/.bashrc
-</code></pre>
+```

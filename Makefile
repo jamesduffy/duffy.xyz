@@ -9,4 +9,4 @@ run:
 	hugo --watch serve
 
 deploy: build
-	rsync -vr ./public/ dufflet:/var/www/duffy.xyz --delete
+	rsync -vr ./public/ duffyxyz:/var/www/duffy.xyz --delete

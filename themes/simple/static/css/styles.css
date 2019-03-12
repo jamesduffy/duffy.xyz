@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Share+Tech+Mono');
 
+::selection {
+  background: #fff200;
+}
+
+::-moz-selection {
+  background: #fff200;
+}
 
 body {
     color: #161718;
@@ -7,18 +14,20 @@ body {
     font-size: 18px;
     text-rendering: optimizeLegibility;
     line-height: 1.5;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
+
+    background: #fafafa;
 
     -webkit-font-smoothing: antialiased;
 }
 
 a, a:visited {
-    color: #0c77b5;
+    color: #5755d9;
     text-decoration: none;
     border-bottom: .05em transparent;
 }
     a:active, a:hover {
-        border-bottom: .05em solid #0c77b5;
+        border-bottom: .05em solid #5755d9;
     }
 
 
@@ -181,6 +190,16 @@ ul.social-links {
     }
 }
 
+main.page-content {
+    background: #fff;
+    border: .05rem solid #dadee4;
+    border-radius: .1rem;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem;
+}
 
 hr {
   border: 0;
