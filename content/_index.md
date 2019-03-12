@@ -3,6 +3,7 @@ title: "About"
 date: 2018-01-08T12:46:19-08:00
 draft: false
 menu: ["main"]
+hide_date: true
 ---
 
 ![Photo of James Duffy](/img/content/about/self-2.jpg)
@@ -16,18 +17,17 @@ I graduated from California State University, Stanislaus with a B.S. degree in C
 
 ## Hardware
 
-- 💻 MacBookPro 15" Retina (Mid 2015)
+- 💻 MacBookPro 15" (2018)
 - 📞 Google Pixel XL (128GB)
-- 🎧 Sony MDR 1000x
-- 📷 Sony Alpha a6300
+- 🎧 Sony MDR 1000X
+- 📷 Fujifilm XT-3
 
 ## Software
 
 - [1Password](https://1password.com/)
-- [Dropbox](https://db.tt/bE7WFaSW)
-- [Dropbox Paper](https://paper.dropbox.com/)
+- [Capture One Pro](https://www.captureone.com/en/products/pro)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
-- [SublimeText 3](https://www.sublimetext.com/)
+- [SublimeText](https://www.sublimetext.com/)
 - [Todoist](https://todoist.com/premium)
 - [Tower](https://www.git-tower.com/mac/)
 - [Tweetbot](https://tapbots.com/tweetbot/mac/)
