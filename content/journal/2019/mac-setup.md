@@ -2,13 +2,15 @@
 title: "Mac Setup 2019"
 date: 2019-01-04T16:13:29-08:00
 draft: false
+toc: true
 ---
 
+# Intro
 This is a personal help document to that I use to get started on a new Mac. I occasionally come back to this to update it and make sure that my current settings are reflected here, but more often than not it gets updated the next time I setup a new mac.
 
 <!--more-->
 
-## Software
+# Software
 - 1Password
 - Alfred
 - Capture One 12
@@ -31,7 +33,7 @@ This is a personal help document to that I use to get started on a new Mac. I oc
 - Synology Drive
 - Fujifilm X Raw Studio
 
-## Custom Settings
+# Custom Settings
 - Clock > Show seconds
 - Disable Fast user switching in menu bar
 - Turn off automatic brightness
@@ -52,7 +54,7 @@ This is a personal help document to that I use to get started on a new Mac. I oc
   - Disable Look up & data detectorsSecondary click: bottom right cornerEnable "Silent clicking"
 - AccessibilityDisplayEnable "Reduce transparency"
 
-## Development Environment
+# Development Environment
 
 ```
 touch ~/.hushlogin
@@ -70,7 +72,7 @@ brew cask install keepingyouawake android-file-transfer daisydisk tower alfred i
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-## Setup Firefox
+# Setup Firefox
 1. Install Sidebar Tabs
 2. Modify userChrome.css
    - Go to Hamburger menu --> Help --> Troubleshooting Information
@@ -96,7 +98,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
      - Theme: `Dark`
 
 
-## Python
+# Python
 
 ```
 brew install python python3
@@ -106,7 +108,7 @@ export PYTHONDONTWRITEBYTECODE=1
 pip install flake8
 ```
 
-## ZSH / iTerm2
+# ZSH / iTerm2
 - Set scrollback to unlimited
 - Set history to 10,000
 - Always show tabs
@@ -115,14 +117,14 @@ pip install flake8
 - Colors: Solarized Dark
 
 
-## Dock Applications
-Finder
-Calendar
-Tweetbot
-Todoist
-Slack
-Chrome
-Firefox
-Sublime Text
-iTerm
-Tower
+# Dock Applications
+1. Finder
+2. Calendar
+3. Tweetbot
+4. Todoist
+5. Slack
+6. Chrome
+7. Firefox
+8. Sublime Text
+9. iTerm
+10. Tower
