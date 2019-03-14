@@ -107,6 +107,24 @@ img {
     }
 
 
+nav.toc {
+    font-size: 0.85rem;
+    border: 1px solid;
+    padding: 1.5rem;
+}
+
+    #TableOfContents ul,
+    #TableOfContents ul ul ul,
+    #TableOfContents ul ul ul ul ul {
+        list-style: numeric;
+    }
+        #TableOfContents ul ul,
+        #TableOfContents ul ul ul ul,
+        #TableOfContents ul ul ul ul ul ul {
+            list-style: lower-alpha;
+        }
+
+
 article {
     margin-bottom: 2rem;
 }

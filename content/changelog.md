@@ -6,6 +6,9 @@ menu: ["footer"]
 hide_date: true
 ---
 
+## March 14, 2019
+- Design tweaks of Table of Contents
+
 ## March 12, 2019
 - Moved back to using Hugo from Ghost
 - Rewrote theme without the use of a framework (other than normalize.css)
