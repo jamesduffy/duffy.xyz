@@ -1,5 +1,5 @@
 ---
-title: "Hi, I'm James Duffy"
+title: "About"
 date: 2018-01-08T12:46:19-08:00
 draft: false
 menu: ["main"]
@@ -17,15 +17,15 @@ I graduated from California State University, Stanislaus with a B.S. degree in C
 My work has helped me become proficient in the following languages and tools in no particular order:
 
 - AWS
-- Hashicorp's Consul
 - Django
 - Grafana
+- Hashicorp Consul
+- Hashicorp Vault
 - MongoDB
 - MySQL
 - Python 2
 - Python 3
 - Terraform
-- Hashicorp's Vault
 
 # What I use daily
 
