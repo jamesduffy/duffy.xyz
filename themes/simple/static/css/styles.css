@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Share+Tech+Mono');
 
 ::selection {
-  background: #fff200;
+  background: #FFF049;
 }
 
 ::-moz-selection {
-  background: #fff200;
+  background: #FFF049;
 }
 
 body {
@@ -88,6 +88,7 @@ img {
     margin-right: auto;
     margin-bottom: 2rem;
 }
+
 
     .site-header h1 a, .site-header h1 a:visited {
         color: #161718;
@@ -175,8 +176,8 @@ article {
 footer#site-footer {
     font-size: .8rem;
     padding: 1rem;
-
     min-height: 250px;
+    text-align: center;
 }
     footer#site-footer a,
     footer#site-footer a:visted,
@@ -258,4 +259,12 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 600px)  {
+    nav.toc {
+        float: right;
+        margin-left: 1rem;
+    }
 }

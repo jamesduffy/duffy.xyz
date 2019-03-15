@@ -6,6 +6,11 @@ menu: ["footer"]
 hide_date: true
 ---
 
+## March 15, 2019
+- Fix title on pages to include page title and not just site name
+- Made journal page more concise with groupings by year
+- Table of Contents now floats to the right when on a tablet or desktop
+
 ## March 14, 2019
 - Design tweaks of Table of Contents
 
