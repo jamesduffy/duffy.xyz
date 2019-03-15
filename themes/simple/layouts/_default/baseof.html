@@ -32,6 +32,13 @@
   <meta name="twitter:creator" content="@duffy0" />
   <meta property="og:url" content="https://duffy.xyz{{ .URL }}" />
 
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Summary }}" />
+  {{ if .Params.featureImage }}
+  <meta property="og:image" content="https://duffy.xyz/{{ .Dir }}{{ .Params.featureImage }}" />
+  {{ end }}
+
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/styles.css">
 

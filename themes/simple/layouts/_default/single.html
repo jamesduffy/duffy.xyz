@@ -1,5 +1,9 @@
 {{ define "main" }}
 <article>
+    {{ if .Params.featureImage }}
+    <img src="https://duffy.xyz/{{ .Dir }}{{ .Params.featureImage }}" class="featured-image" />
+    {{ end }}
+
     <header>
         <h1 class="page-title">{{ .Title }}</h1>
 

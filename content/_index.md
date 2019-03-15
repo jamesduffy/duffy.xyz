@@ -4,6 +4,7 @@ date: 2018-01-08T12:46:19-08:00
 draft: false
 menu: ["main"]
 hide_date: true
+featureImage: img/content/about/self-2.jpg
 ---
 
 ![Photo of James Duffy](/img/content/about/self-2.jpg)
