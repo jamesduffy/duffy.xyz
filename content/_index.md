@@ -2,7 +2,7 @@
 title: "About"
 date: 2018-01-08T12:46:19-08:00
 draft: false
-menu: ["main"]
+menu: ["main", "footer"]
 hide_date: true
 hide_title: true
 featureImage: img/content/about/self-3.jpg
