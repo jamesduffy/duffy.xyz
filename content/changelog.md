@@ -6,6 +6,10 @@ menu: ["footer"]
 hide_date: true
 ---
 
+## July 29, 2019
+- Add [photography section](/photography)
+- Add [Things I Use](/uses) page
+
 ## March 15, 2019
 - Fix title on pages to include page title and not just site name
 - Made journal page more concise with groupings by year
