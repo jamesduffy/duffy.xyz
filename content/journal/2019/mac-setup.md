@@ -54,6 +54,13 @@ This is a personal help document to that I use to get started on a new Mac. I oc
   - Disable Look up & data detectorsSecondary click: bottom right cornerEnable "Silent clicking"
 - AccessibilityDisplayEnable "Reduce transparency"
 
+## Optional
+
+### Disable Curly Quotes
+If I had a dollar for every time I was trying to fix a programming issue and it ended up somehow Apple changed my quotes to curly quotes without my realizing it.
+
+Go to System Preferences > Keyboard > Text > Uncheck "Use smart quotes and dashes"
+
 # Development Environment
 
 ```
