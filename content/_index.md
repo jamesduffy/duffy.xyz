@@ -4,10 +4,10 @@ date: 2018-01-08T12:46:19-08:00
 draft: false
 menu: ["main"]
 hide_date: true
-featureImage: img/content/about/self-2.jpg
+featureImage: img/content/about/self-3.jpg
 ---
 
-![Photo of James Duffy](/img/content/about/self-2.jpg)
+![Photo of James Duffy](/img/content/about/self-3.jpg)
 
 I am passionate about the web. Long hours programming and scaling machines in the cloud is my norm. I have helped build high traffic websites both professionally and for fun. I live and work in San Francisco.
 
