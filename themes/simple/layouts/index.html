@@ -1,7 +1,9 @@
 {{ define "main" }}
 <article>
     <header>
-        <h1 class="page-title">{{ .Title }}</h1>
+        {{ if not .Params.hide_title }}
+            <h1 class="page-title">{{ .Title }}</h1>
+        {{ end }}
 
         {{ if not .Params.hide_date }}
         <date>{{ .PublishDate.Format "January 2, 2006" }}</date>
