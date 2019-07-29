@@ -9,6 +9,8 @@ hide_date: true
 ## July 29, 2019
 - Add [photography section](/photography)
 - Add [Things I Use](/uses) page
+- Improved top navigation
+- Added footer navigation
 
 ## March 15, 2019
 - Fix title on pages to include page title and not just site name
