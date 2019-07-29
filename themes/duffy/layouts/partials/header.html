@@ -7,7 +7,7 @@
 
       <section class="navbar-section">
         {{ range .Site.Menus.main }}
-          <a href="{{.URL}}" class="btn btn-link">{{ .Pre }}<span>{{ .Name }}</span></a>
+          <a href="{{ .Permalink }}" class="btn btn-link">{{ .Pre }}<span>{{ .Name }}</span></a>
         {{ end }}
       </section>
     </header>

@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article>
+    <header>
+        <h1 class="page-title">{{ .Title }}</h1>
+    </header>
+
+    {{ .Content }}
+
+    <div class="cards-list">
+        {{ range .Pages }}
+        <a class="card" href="{{ .Permalink }}">
+          <div class="card-image">
+            {{ if .Params.image }}
+                <img src="/{{ .Dir }}{{ .Params.image }}" />
+            {{ end }}
+          </div>
+          <div class="card-title title-white">
+            <p>{{.Title}}</p>
+          </div>
+        </a>
+        {{ end }}
+    </div>
+
+
+    {{ range (.Data.Pages) }}
+      <ul>
+        {{ range .Pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+
+</article>
+{{ end }}

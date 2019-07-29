@@ -1,0 +1,48 @@
+{{ define "main" }}
+<article>
+    {{ if .Params.featureImage }}
+    <img src="https://duffy.xyz/{{ .Dir }}{{ .Params.featureImage }}" class="featured-image" />
+    {{ end }}
+
+    <header>
+        <h1 class="page-title">{{ .Title }}</h1>
+
+        {{ if not .Params.hide_date }}
+        <date>{{ .PublishDate.Format "January 2, 2006" }}</date>
+        {{ end }}
+    </header>
+
+    <main>{{ .Content }}</main>
+
+    <div id="macy-container">
+    {{ $images := .Page.Resources.ByType "image" }}
+    {{ range $images }}
+        {{ $image := .Resize "1280x q90" }}
+        <a data-fslightbox="gallery" href="{{ $image.Permalink }}">
+            <img src="{{ $image.Permalink }}">
+        </a>
+    {{ end }}
+    </div>
+
+
+    {{ partial "page_list.html" . }}
+
+</article>
+
+<script src="/js/macy.js"></script>
+<script type="text/javascript" src="/js/fslightbox.min.js"></script>
+<script type="text/javascript">
+  var macy = Macy({
+    container: '#macy-container',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 24,
+    columns: 3,
+    breakAt: {
+      1200: 3,
+      940: 2,
+      400: 1
+    }
+  });
+</script>
+{{ end }}
