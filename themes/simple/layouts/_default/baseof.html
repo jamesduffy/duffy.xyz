@@ -67,6 +67,15 @@
             <li><a href="{{.URL}}" class="{{ if $active }}active{{ end }}">{{ .Pre }}<span>{{ .Name }}</span></a></li>
             {{ end }}
         </ul>
+
+        <form>
+            <select onchange="window.location.assign(this.options[this.selectedIndex].value)">
+                <option value="">Go to page...</option>
+                {{ range .Site.Menus.main }}
+                <option value="{{.URL}}">{{ .Name }}</option>
+                {{ end }}
+            </select>
+        </form>
       </div>
     </header>
 
