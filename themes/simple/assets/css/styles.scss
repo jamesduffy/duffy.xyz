@@ -137,6 +137,7 @@ img {
       transition: .3s background-color, .3s color;
       border-bottom: unset;
       padding: .25rem .5rem;
+      border-radius: 10px;
     }
 
     li:last-child a {
@@ -413,9 +414,14 @@ ul.breadcrumb li a:hover {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.4s;
+
+  &:hover {
+    box-shadow: 0 0 10px 0px #000;
+    transform: scale(1.05);
+  }
 }
 
-.card-list a:hover {
+a:hover.card {
   border-bottom: unset;
 }
 
@@ -462,5 +468,17 @@ ul.breadcrumb li a:hover {
   .card-list {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
+  }
+}
+
+
+#macy-container {
+  a {
+    transition: transform .2s;
+
+    &:hover {
+      border-bottom: unset;
+      transform: scale(1.05);
+    }
   }
 }
