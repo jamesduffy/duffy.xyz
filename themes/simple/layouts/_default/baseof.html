@@ -34,8 +34,8 @@
   <meta name="twitter:card" content="summary" />
   <meta property="og:title" content="{{ .Title }} &ndash; {{ .Site.Title }}" />
   <meta property="og:description" content="{{ .Summary }}" />
-  {{ if .Params.featureImage }}
-  <meta property="og:image" content="https://duffy.xyz/{{ .Dir }}{{ .Params.featureImage }}" />
+  {{ if .Params.image }}
+  <meta property="og:image" content="https://duffy.xyz/{{ .Dir }}{{ .Params.image }}" />
   {{ else }}
   <meta property="og:image" content="https://duffy.xyz/img/content/about/self-3-small.png" />
   {{ end }}

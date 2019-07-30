@@ -1,7 +1,7 @@
 ---
 date: 2012-01-23 20:00:00
 title: "Ordered my first fixed gear"
-featureImage: state-bike.jpg
+image: state-bike.jpg
 ---
 
 Just ordered a new bicycle from State Bicycle. I will not be getting rid of my current specialized. I wanted to get a fixed gear to learn and enjoy a different side of riding.

@@ -1,7 +1,7 @@
 ---
 date: 2015-01-27 02:08:00
 title: "Twitter Markov Generator"
-featureImage: twitter-markov-generator-screenshot.png
+image: twitter-markov-generator-screenshot.png
 ---
 
 I recently built a Markov Generator for Twitter in a few hours. The site will look at your last few hundred tweets and randomly try to find something that you might say. It uses probability from your previous tweets to find words that might go together.

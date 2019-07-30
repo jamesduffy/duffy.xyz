@@ -1,7 +1,7 @@
 ---
 date: 2015-01-03 02:26:00
 title: "What is in my bag: 2015?"
-featureImage: 'what-is-in-my-bag-2015.jpg'
+image: 'what-is-in-my-bag-2015.jpg'
 ---
 
 I always have this bag ready to go at a moments notice. I have perfected my bag after years of college and a few months of being a Software Engineer. With this bag I am ready to handle the day.

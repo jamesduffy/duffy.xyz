@@ -5,7 +5,7 @@ draft: false
 menu: ["main", "footer"]
 hide_date: true
 hide_title: true
-featureImage: img/content/about/self-3.jpg
+image: img/content/about/self-3-small.jpg
 ---
 
 ![Photo of James Duffy](/img/content/about/self-3-small.png)

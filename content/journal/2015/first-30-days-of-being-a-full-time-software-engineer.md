@@ -1,7 +1,7 @@
 ---
 date: 2015-06-02 01:04:00
 title: "First 30 Days of Being a Full-time Software Engineer"
-featureImage: first-30-days-software-engineer.png
+image: first-30-days-software-engineer.png
 ---
 
 I started my first full-time job almost 3 months ago. I wanted to share my accomplishments from the first 30 days.

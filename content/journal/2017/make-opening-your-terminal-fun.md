@@ -1,7 +1,7 @@
 ---
 date: 2017-05-15 14:41:30.072518
 title: "Make opening your terminal fun"
-featureImage: make-terminal-fun-again.png
+image: make-terminal-fun-again.png
 ---
 
 My favorite and least useful thing I have set up on my laptop is to run `fortune | ponysay` when I open a new bash session.
