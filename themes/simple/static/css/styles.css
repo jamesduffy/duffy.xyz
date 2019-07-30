@@ -25,6 +25,7 @@ a, a:visited {
     color: #5755d9;
     text-decoration: none;
     border-bottom: .05em transparent;
+    transition: .2s border-bottom;
 }
     a:active, a:hover {
         border-bottom: .05em solid #5755d9;
@@ -182,6 +183,9 @@ img {
 
 
 @media screen and (min-width: 600px) {
+  .site-header .nav ul {
+    display: block;
+  }
   .nav li {
     border-bottom: none;
     height: 50px;
