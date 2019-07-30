@@ -26,10 +26,11 @@ a, a:visited {
     text-decoration: none;
     border-bottom: .05em transparent;
     transition: .2s border-bottom;
-}
-    a:active, a:hover {
-        border-bottom: .05em solid #5755d9;
+
+    &:active, &:hover {
+      border-bottom: .05em solid #5755d9;
     }
+}
 
 
 code {
@@ -44,11 +45,11 @@ code {
 pre {
     background-color: rgba(27,31,35,.05);
     overflow-x: scroll;
-}
-    pre code {
+
+    code {
         background-color: transparent;
     }
-
+}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,68 +90,70 @@ img {
     margin-right: auto;
     margin-bottom: 2rem;
     text-align: center;
+
+    a {
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    h1 a, h1 a:visited {
+      color: #161718;
+      font-family: 'Share Tech Mono', serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+
+      &:hover, &:active {
+        border-bottom: none;
+      }
+    }
+
+    .nav ul {
+      display: none;
+    }
 }
 
-
-    .site-header h1 a, .site-header h1 a:visited {
-        color: #161718;
-        font-family: 'Share Tech Mono', serif;
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-        .site-header h1 a:hover, .site-header h1 a:active {
-            border-bottom: none;
-        }
-
-    .site-header a {
-        margin: 1rem 1rem 1rem 0;
-    }
 
     .page-title {
         font-size: 2.2rem;
     }
 
+.nav {
 
-.site-header .nav ul {
-  display: none;
-}
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: 1rem;
+      line-height: 40px;
+      height: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #222;
+      display: block;
+      transition: .3s background-color, .3s color;
+      border-bottom: unset;
+      padding: .25rem .5rem;
+    }
+
+    li:last-child a {
+      margin-right: 0;
+    }
+
+    a:hover, a.active {
+      color: #fff;
+      background-color: #5755d9;
+      border-bottom: unset;
+    }
+  }
 
 
-.nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.nav li {
-  font-size: 1rem;
-  line-height: 40px;
-  height: 40px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #222;
-  display: block;
-  transition: .3s background-color, .3s color;
-  border-bottom: unset;
-  padding: .25rem .5rem;
-}
-
-.nav li:last-child a {
-  margin-right: 0;
-}
-
-.nav a:hover,
-.nav a.active {
-  color: #fff;
-  background-color: #5755d9;
-  border-bottom: unset;
-}
-
-  .nav select {
+  select {
     /* Select Reset */
-    border: 1px solid $select-color;
+    border: 1px solid #161718;
     outline:none;
     background: transparent;
     -webkit-appearance: none;
@@ -166,21 +169,22 @@ img {
     /* custom select appearance */
     padding: 12px 55px 15px 15px;
     font-size: 14px;
-  }
-  .nav select:after {
-    position: absolute;
-    right:0; top:0;
-    width: 50px;
-    height:100%;
-    line-height: 50px;
-    content: '\25BC';
-    text-align: center;
-    z-index:-1;
-    background: gray;
-    color:#fff;
-    font-size: 18px;
-  }
 
+    &:after {
+      position: absolute;
+      right:0; top:0;
+      width: 50px;
+      height:100%;
+      line-height: 50px;
+      content: '\25BC';
+      text-align: center;
+      z-index:-1;
+      background: gray;
+      color:#fff;
+      font-size: 18px;
+    }
+  }
+}
 
 @media screen and (min-width: 600px) {
   .site-header .nav ul {
@@ -222,57 +226,62 @@ nav.toc {
 
 
 article {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+
+  img.featured-image {
+    max-width: 100%;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem;}
+  h3 { font-size: 1.2rem; }
+  h4 { font-size: 1rem; }
+  h5 { font-size: .8rem; }
+  h6 { font-size: .5rem; }
+
+  header {
+    margin-block-end: 1rem;
+
+    h1, h3 {
+      margin-block-end: 0;
+    }
+  }
+
+  date {
+    font-style: italic;
+    font-size: .9rem;
+    color: #222;
+  }
+
+  details {
+    color: #666
+  }
+
+  time {
+    color: #666;
+  }
+
+  p {
+    margin-block-start: 0;
+  }
+
+  article {
+
+    header {
+      margin-block-end: 0;
+    }
+
+    main {
+      font-size: 1rem;
+      margin: 1rem 1rem 2rem 1rem;
+    }
+  }
 }
 
-    article img.featured-image {
-        max-width: 100%;
-        max-height: 500px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    article h1 { font-size: 1.8rem; }
-    article h2 { font-size: 1.4rem;}
-    article h3 { font-size: 1.2rem; }
-    article h4 { font-size: 1rem; }
-    article h5 { font-size: .8rem; }
-    article h6 { font-size: .5rem; }
-
-    article header {
-        margin-block-end: 1rem;
-    }
-        article article header {
-            margin-block-end: 0;
-        }
-        article header h1,
-        article header h3 {
-            margin-block-end: 0;
-        }
-
-        article date {
-            font-style: italic;
-            font-size: .9rem;
-            color: #222;
-        }
-
-        article article main {
-            font-size: 1rem;
-            margin: 1rem 1rem 2rem 1rem;
-        }
-
-    details {
-        color: #666
-    }
-
-    time {
-        color: #666;
-    }
-
-    article p {
-        margin-block-start: 0;
-    }
 
 
 
@@ -281,21 +290,21 @@ footer#site-footer {
     padding: 1rem;
     min-height: 250px;
     text-align: center;
-}
-    footer#site-footer a,
-    footer#site-footer a:visted,
-    footer#site-footer a:active,
-    footer#site-footer a:hover {
-        color: #F7F8FA;
-        border: none;
+
+    a,
+    a:visted,
+    a:active,
+    a:hover {
+      color: #F7F8FA;
+      border: none;
     }
 
-  footer nav a {
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-  }
-
+    nav a {
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+    }
+}
 
 ul.social-links {
     list-style: none;
@@ -308,11 +317,11 @@ ul.social-links {
 
         a {
             padding: .25rem;
-            color: @font-color;
+            color: #fff;
 
             &:active, &:hover {
                 border: none;
-                color: @primary-color
+                color: #fff;
             }
         }
     }
