@@ -32,10 +32,12 @@
   <meta property="og:url" content="https://duffy.xyz{{ .URL }}" />
 
   <meta name="twitter:card" content="summary" />
-  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:title" content="{{ .Title }} &ndash; {{ .Site.Title }}" />
   <meta property="og:description" content="{{ .Summary }}" />
   {{ if .Params.featureImage }}
   <meta property="og:image" content="https://duffy.xyz/{{ .Dir }}{{ .Params.featureImage }}" />
+  {{ else }}
+  <meta property="og:image" content="https://duffy.xyz/img/content/about/self-3-small.png" />
   {{ end }}
 
   <link rel="stylesheet" href="/css/normalize.css">
