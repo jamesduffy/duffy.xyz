@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Share+Tech+Mono');
 
+$highlight-color: #FFF049;
+$primary-color: #5755d9;
+$transition-time: 0.4s;
+$scale-size: 1.05;
+
+
 ::selection {
-  background: #FFF049;
+  background: $highlight-color;
 }
 
 ::-moz-selection {
-  background: #FFF049;
+  background: $highlight-color;
 }
 
 body {
@@ -22,13 +28,13 @@ body {
 }
 
 a, a:visited {
-    color: #5755d9;
+    color: $primary-color;
     text-decoration: none;
     border-bottom: .05em transparent;
     transition: .2s border-bottom;
 
     &:active, &:hover {
-      border-bottom: .05em solid #5755d9;
+      border-bottom: .05em solid $primary-color;
     }
 }
 
@@ -146,7 +152,7 @@ img {
 
     a:hover, a.active {
       color: #fff;
-      background-color: #5755d9;
+      background-color: $primary-color;
       border-bottom: unset;
     }
   }
@@ -413,56 +419,53 @@ ul.breadcrumb li a:hover {
   height: 350px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 0.4s;
+  transition: $transition-time;
 
   &:hover {
     box-shadow: 0 0 10px 0px #000;
-    transform: scale(1.05);
+    transform: scale($scale-size);
+    border-bottom: unset;
+  }
+
+  .card-image {
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(33,36,37,0)), color-stop(50%, rgba(33,36,37,0.7)), color-stop(100%, rgba(33,36,37,0.84)));
+    background: -webkit-linear-gradient(top, rgba(33,36,37,0) 0%, rgba(33,36,37,0.7) 50%, rgba(33,36,37,0.84) 100%);
+    background: -o-linear-gradient(top, rgba(33,36,37,0) 0%, rgba(33,36,37,0.7) 50%, rgba(33,36,37,0.84) 100%);
+    background: -ms-linear-gradient(top, rgba(33,36,37,0) 0%, rgba(33,36,37,0.7) 50%, rgba(33,36,37,0.84) 100%);
+    background: linear-gradient(to bottom, rgba(33,36,37,0) 0%,rgba(33,36,37,0.7) 50%,rgba(33,36,37,0.84) 100%);
+
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .card-title {
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+
+  .title-white {
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+  }
+
+  .title-black {
+    color: black;
   }
 }
 
-a:hover.card {
-  border-bottom: unset;
-}
-
-.card .card-image {
-  width: inherit;
-  height: inherit;
-  border-radius: 10px;
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(33,36,37,0)), color-stop(50%, rgba(33,36,37,0.7)), color-stop(100%, rgba(33,36,37,0.84)));
-  background: -webkit-linear-gradient(top, rgba(33,36,37,0) 0%, rgba(33,36,37,0.7) 50%, rgba(33,36,37,0.84) 100%);
-  background: -o-linear-gradient(top, rgba(33,36,37,0) 0%, rgba(33,36,37,0.7) 50%, rgba(33,36,37,0.84) 100%);
-  background: -ms-linear-gradient(top, rgba(33,36,37,0) 0%, rgba(33,36,37,0.7) 50%, rgba(33,36,37,0.84) 100%);
-  background: linear-gradient(to bottom, rgba(33,36,37,0) 0%,rgba(33,36,37,0.7) 50%,rgba(33,36,37,0.84) 100%);
-}
-
-.card .card-image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.card .card-title {
-  text-align: center;
-  border-radius: 0px 0px 10px 10px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-}
-
-
-.title-white {
-  color: white;
-  text-shadow: 2px 2px 5px #000;
-}
-
-.title-black {
-  color: black;
-}
 
 @media all and (max-width: 500px) {
   .card-list {
@@ -474,11 +477,11 @@ a:hover.card {
 
 #macy-container {
   a {
-    transition: transform .2s;
+    transition: transform $transition-time;
 
     &:hover {
       border-bottom: unset;
-      transform: scale(1.05);
+      transform: scale($scale-size);
     }
   }
 }
