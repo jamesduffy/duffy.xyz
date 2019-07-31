@@ -34,10 +34,17 @@
   <meta name="twitter:card" content="summary" />
   <meta property="og:title" content="{{ .Title }} &ndash; {{ .Site.Title }}" />
   <meta property="og:description" content="{{ .Summary }}" />
+
   {{ if .Params.image }}
-  <meta property="og:image" content="https://duffy.xyz/{{ .Dir }}{{ .Params.image }}" />
+    {{ $image :=  (print "/" .Dir .Params.image) }}
+    {{ with $image }}
+        {{ with ($.Site.GetPage (path.Dir .)).Resources.GetMatch (path.Base .) }}
+            {{ $r := .Resize "1400x q90" }}
+            <meta property="og:image" content="https://duffy.xyz{{ $r.RelPermalink }}" />
+        {{ end }}
+    {{ end }}
   {{ else }}
-  <meta property="og:image" content="https://duffy.xyz/img/content/about/self-3-small.png" />
+    <meta property="og:image" content="https://duffy.xyz/img/content/about/self-3-small.png" />
   {{ end }}
 
   <link rel="stylesheet" href="/css/normalize.css">
