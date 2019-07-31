@@ -50,8 +50,7 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/fslightbox.min.css">
 
-  {{ $styleSass := resources.Get "css/styles.scss" }}
-  {{ $styleCSS := $styleSass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  {{ $styleCSS := resources.Get "css/styles.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styleCSS.Permalink }}">
 
   <title>
