@@ -29,14 +29,14 @@
 
   <meta name="twitter:site" content="@duffy0" />
   <meta name="twitter:creator" content="@duffy0" />
-  <meta property="og:url" content="https://duffy.xyz{{ .URL }}" />
+  <meta property="og:url" content="https://duffy.xyz{{ .Permalink }}" />
 
   <meta name="twitter:card" content="summary" />
   <meta property="og:title" content="{{ .Title }} &ndash; {{ .Site.Title }}" />
   <meta property="og:description" content="{{ .Summary }}" />
 
   {{ if .Params.image }}
-    {{ $image :=  (print "/" .Dir .Params.image) }}
+    {{ $image :=  (print "/" .File.Dir .Params.image) }}
     {{ with $image }}
         {{ with ($.Site.GetPage (path.Dir .)).Resources.GetMatch (path.Base .) }}
             {{ $r := .Resize "1400x q90" }}

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article>
     {{ if .Params.image }}
-    <img src="https://duffy.xyz/{{ .Dir }}{{ .Params.image }}" class="featured-image" />
+    <img src="https://duffy.xyz/{{ .File.Dir }}{{ .Params.image }}" class="featured-image" />
     {{ end }}
 
     <header>
