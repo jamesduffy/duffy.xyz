@@ -6,6 +6,9 @@ menu: []
 hide_date: true
 ---
 
+## August 22, 2019
+- Added [Indieweb](https://indieweb.org/) microformats to journal and global h-card
+
 ## July 29, 2019
 - Add [photography section](/photography)
 - Add [Things I Use](/uses) page

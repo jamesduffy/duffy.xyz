@@ -258,7 +258,7 @@ article {
     }
   }
 
-  date {
+  .meta {
     font-style: italic;
     font-size: .9rem;
     color: #222;
@@ -323,12 +323,17 @@ ul.social-links {
         display: inline;
 
         a {
-            padding: .25rem;
+            padding: .5rem;
             color: #fff;
 
             &:active, &:hover {
                 border: none;
-                color: #fff;
+                color: $primary-color;
+            }
+
+            img {
+              width: 20px;
+              margin: .25rem;
             }
         }
     }

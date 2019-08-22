@@ -1,24 +1,27 @@
 {{ define "main" }}
-<article>
+<article class="h-entry">
     {{ if .Params.image }}
-    <img src="https://duffy.xyz/{{ .File.Dir }}{{ .Params.image }}" class="featured-image" />
+    <img src="https://duffy.xyz/{{ .File.Dir }}{{ .Params.image }}" class="featured-image u-photo" />
     {{ end }}
 
     <header>
         {{ if not .Params.hide_title }}
-            <h1 class="page-title">{{ .Title }}</h1>
+            <h1 class="page-title p-name"><a class="u-url" href="{{ .Permalink }}">{{ .Title }}</a></h1>
         {{ end }}
 
-        {{ if not .Params.hide_date }}
-        <date>{{ .PublishDate.Format "January 2, 2006" }}</date>
-        {{ end }}
+        <div class="meta">
+            Posted on <date>{{ .PublishDate.Format "January 2, 2006" }}</date> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">James Duffy</a>
+            <date class="dt-published" style="display: none;">{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}</date>
+        </div>
     </header>
 
     {{ if .Params.toc }}
         {{ partial "table_of_contents.html" . }}
     {{ end }}
 
-    <main>{{ .Content }}</main>
+    <div style="display: none;" class="p-summary">{{ .Summary }}</div>
+
+    <main class="e-content">{{ .Content }}</main>
 
     {{ partial "page_list.html" . }}
 
