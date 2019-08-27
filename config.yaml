@@ -1,0 +1,33 @@
+---
+baseURL: "https://duffy.xyz/"
+languageCode:  "en-us"
+title: "James Duffy"
+theme: "simple"
+
+bloggroupby: "year"
+
+permalinks:
+  posts: /:title/
+
+menu:
+  main:
+  - identifier: about
+    name: About
+    url: /
+    weight: -200
+  - identifier: radio
+    name: Ham Radio
+    url: /radio/
+    weight: -100
+  - identifier: posts
+    name: Posts
+    url: /posts/
+    weight: -90
+  - identifier: photography
+    name: Photography
+    url: /photography/
+    weight: -80
+  - identifier: use
+    name: Things I Use
+    url: /uses/
+    weight: -80

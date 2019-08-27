@@ -2,7 +2,6 @@
 title: "Changelog"
 date: 2018-01-08T13:53:33-08:00
 draft: false
-menu: []
 hide_date: true
 ---
 

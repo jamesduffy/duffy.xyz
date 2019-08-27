@@ -1,7 +1,0 @@
-baseURL = "https://duffy.xyz/"
-languageCode = "en-us"
-title = "James Duffy"
-theme = "simple"
-bloggroupby = "year"
-
-[menu]

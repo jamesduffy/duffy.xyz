@@ -4,7 +4,6 @@ date: 2019-07-29T09:55:09-07:00
 draft: false
 hide_date: true
 toc: true
-menu: ["footer"]
 ---
 
 # Intro
