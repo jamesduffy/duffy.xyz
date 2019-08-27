@@ -1,6 +1,8 @@
 ---
 date: 2014-11-15 02:29:00
 title: "Settings up SSL and non SSL Nginx sites to play nice together"
+aliases:
+    - /journal/2014/settings-up-ssl-and-non-ssl-nginx-sites-to-play-nice-together/
 ---
 
 I learned the hard way recently the importance of setting additional Nginx server configurations when hosting both SSL and Non-SSL sites on the same machine.

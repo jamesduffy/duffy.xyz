@@ -1,6 +1,8 @@
 ---
 date: 2014-12-05 02:28:00
 title: "Long time editor says goodbye and good luck"
+aliases:
+    - /journal/2014/long-time-editor-says-goodbye-and-good-luck/
 ---
 
 I joined the California State University, Stanislaus Signal Fall 2011, and I no longer know what I am going to do without seeing the bright and smiling faces of my fellow editors every week.

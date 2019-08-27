@@ -1,6 +1,8 @@
 ---
 date: 2015-01-13 00:36:00
 title: "Twitter Authentication in Django with Tweepy"
+aliases:
+    - /journal/2015/twitter-authentication-in-django-with-tweepy/
 ---
 
 While working on a recent project during my internship I had to come up with a way to authenticate users in our Django application. We use an Angular front-end that makes calls to Django.

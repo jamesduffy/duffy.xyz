@@ -1,6 +1,8 @@
 ---
 date: 2016-06-30 01:03:00
 title: "TurlockCityBooze shutting down"
+aliases:
+    - /journal/2016/turlockcitybooze-shutting-down/
 ---
 
 All great things must come to an end, unfortunately that time has come for TCB. I am no longer living in the Central Valley and I would not be able to keep the site up to date, so I made the tough decision to shut it down.

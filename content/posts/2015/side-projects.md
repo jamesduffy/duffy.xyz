@@ -1,6 +1,8 @@
 ---
 date: 2015-05-28 01:06:00
 title: "Side Projects"
+aliases:
+    - /journal/2015/side-projects/
 ---
 
 A few months ago I started my first full time job since graduating college. I am working with some great people and making meaningful contributions to the team and the company.

@@ -3,6 +3,8 @@ title: "Mac Setup 2019"
 date: 2019-01-04T16:13:29-08:00
 draft: false
 toc: true
+aliases:
+    - /journal/2019/mac-setup-2019/
 ---
 
 # Intro

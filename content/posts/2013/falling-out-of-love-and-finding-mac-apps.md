@@ -1,6 +1,8 @@
 ---
 date: 2013-08-24 19:00:00
 title: "Falling out of love and finding Mac Apps"
+aliases:
+    - /journal/2013/falling-out-of-love-and-finding-mac-apps/
 ---
 
 After years of using Windows computers and lusting over Apple’s MacBooks and MacBook Air I finally got my hands on a new 2013 MacBook Air. I have only had little exposure to OSX when I had a hand me down MacBook circa 2006 and it gave me a decent, but slow and aged experience. It didn’t sway me away from Windows, but that is likely because it was early on the OSX path somewhere around version 10.2.8.

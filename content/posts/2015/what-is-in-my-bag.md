@@ -1,7 +1,9 @@
 ---
 date: 2015-01-03 02:26:00
-title: "What is in my bag: 2015?"
-image: 'what-is-in-my-bag-2015.jpg'
+title: "What is in my bag?"
+image: 'what-is-in-my-bag.jpg'
+aliases:
+    - /journal/2015/what-is-in-my-bag-2015/
 ---
 
 I always have this bag ready to go at a moments notice. I have perfected my bag after years of college and a few months of being a Software Engineer. With this bag I am ready to handle the day.

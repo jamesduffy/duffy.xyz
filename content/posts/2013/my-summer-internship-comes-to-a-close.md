@@ -1,6 +1,8 @@
 ---
 date: 2013-08-16 19:00:00
 title: "My summer internship comes to a close"
+aliases:
+    - /journal/2013/my-summer-internship-comes-to-a-close/
 ---
 
 Today is it! I have learned a lot in the few short weeks I have been at IRIDEX Corporation and it has been a wonderful and eye opening experience and if I could I would stay longer, but alas I must finish up school.

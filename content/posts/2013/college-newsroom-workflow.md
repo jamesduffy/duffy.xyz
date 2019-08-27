@@ -1,6 +1,8 @@
 ---
 date: 2013-08-05 17:02:00.072518
 title: "College Newsroom Workflow"
+aliases:
+    - /journal/2013/college-newsroom-workflow/
 ---
 
 For the past few years I have worked for the California State University, Stanislaus Signal newspaper as their Online Editor. Going into the job I had no experience with a newspaper or operating a website with a dedicated audience with constant traffic.

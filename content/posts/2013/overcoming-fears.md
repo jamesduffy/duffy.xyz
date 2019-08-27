@@ -1,6 +1,8 @@
 ---
 date: 2013-07-29 19:00:00
 title: "Overcoming Fears"
+aliases:
+    - /journal/2013/overcoming-fears/
 ---
 
 To overcome fear you must face it. My fear was riding my bicycle in the pouring rain. That’s why I made it a personal mission to get up and ride through the pain, through the discomfort.
