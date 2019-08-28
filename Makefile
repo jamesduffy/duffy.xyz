@@ -6,7 +6,7 @@ clean:
 	rm -r public/
 
 run:
-	hugo --watch serve
+	hugo --buildDrafts --watch serve
 
 deploy: build
 	rsync -vr ./public/ duffyxyz:/var/www/duffy.xyz --delete
