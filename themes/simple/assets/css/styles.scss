@@ -23,7 +23,7 @@ body {
     line-height: 1.75;
     margin: 0 0 2rem 0;
 
-    background: #fafafa;
+    background: #d9d9d9;
 
     -webkit-font-smoothing: antialiased;
 }
@@ -80,6 +80,18 @@ img {
 
 .text-center { text-align: center; }
 .text-mono { font-family: 'Share Tech Mono', serif; }
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  box-shadow: 3px 3px black;
+  margin-right: calc(-11.5rem - var(--column-gap));
+  vertical-align: top;
+  transition: 0.3s;
+}
 
 .container {
     margin: 0 auto;
@@ -218,10 +230,7 @@ nav.toc {
     font-size: 0.9rem;
     padding: 1.5rem;
 
-    padding: 1.5rem 1.5rem 0.2rem;
-    margin: 3rem 0;
-    border-radius: 8px;
-    border: 2px solid #e5e5e5;
+    @extend .card;
 }
 
     #TableOfContents ul,
@@ -348,14 +357,15 @@ ul.social-links {
 }
 
 main.page-content {
-    background: #fff;
-    border: .05rem solid #dadee4;
-    border-radius: .1rem;
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 1rem;
+  background: #fff;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  box-shadow: 3px 3px black;
+  margin-right: calc(-11.5rem - var(--column-gap));
+  vertical-align: top;
+  transition: 0.3s;
 }
 
 ul.breadcrumb {
@@ -408,7 +418,7 @@ ul.breadcrumb li a:hover {
 
 
 /* Photography Cards */
-.cards-list {
+.photo-cards-list {
   z-index: 0;
   width: 100%;
   display: flex;
@@ -416,7 +426,7 @@ ul.breadcrumb li a:hover {
   flex-wrap: wrap;
 }
 
-.card {
+.photo-card {
   margin: 10px auto;
   width: 350px;
   height: 350px;
@@ -424,13 +434,14 @@ ul.breadcrumb li a:hover {
   cursor: pointer;
   transition: $transition-time;
 
-  &:hover {
+  &:hover, &:active {
     box-shadow: 0 0 10px 0px #000;
     transform: scale($scale-size);
     border-bottom: unset;
+    text-decoration: none;
   }
 
-  .card-image {
+  .photo-card-image {
     width: inherit;
     height: inherit;
     border-radius: 10px;
@@ -449,7 +460,7 @@ ul.breadcrumb li a:hover {
     }
   }
 
-  .card-title {
+  .photo-card-title {
     text-align: center;
     border-radius: 0px 0px 10px 10px;
     font-family: sans-serif;
@@ -471,7 +482,7 @@ ul.breadcrumb li a:hover {
 
 
 @media all and (max-width: 500px) {
-  .card-list {
+  .photo-card-list {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }

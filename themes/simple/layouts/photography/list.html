@@ -6,10 +6,10 @@
 
     {{ .Content }}
 
-    <div class="cards-list">
+    <div class="photo-cards-list">
         {{ range .Pages }}
-        <a class="card" href="{{ .Permalink }}">
-          <div class="card-image">
+        <a class="photo-card" href="{{ .Permalink }}">
+          <div class="photo-card-image">
             {{ if .Params.image }}
               {{ $image :=  (print "/" .File.Dir .Params.image) }}
               {{ with $image }}
@@ -20,7 +20,7 @@
               {{ end }}
             {{ end }}
           </div>
-          <div class="card-title title-white">
+          <div class="photo-card-title title-white">
             <p>{{.Title}}</p>
           </div>
         </a>
