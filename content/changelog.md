@@ -5,6 +5,9 @@ draft: false
 hide_date: true
 ---
 
+## August 28, 2019
+- Fixed design of mobile page `select` navigation
+
 ## August 27, 2019
 - Design refresh of fonts, `.cards` and body `background -color`
 - Moved journal entries to posts

@@ -10,7 +10,7 @@ author:
 bloggroupby: "year"
 
 permalinks:
-  posts: /:title/
+  posts: /:year/:slug/
 
 menu:
   main:

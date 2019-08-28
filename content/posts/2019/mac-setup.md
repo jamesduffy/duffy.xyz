@@ -1,9 +1,11 @@
 ---
-title: "Mac Setup 2019"
+title: "Mac Setup"
 date: 2019-01-04T16:13:29-08:00
 draft: false
 toc: true
+url: "/mac-setup/"
 aliases:
+    - /2019/mac-setup-2019/
     - /journal/2019/mac-setup-2019/
 ---
 
