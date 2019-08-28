@@ -13,29 +13,11 @@
   <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <meta name="twitter:site" content="@duffy0" />
-  <meta name="twitter:creator" content="@duffy0" />
-  <meta property="og:url" content="{{ .Site.BaseURL }}{{ .Permalink }}" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta property="og:title" content="{{ .Title }} &ndash; {{ .Site.Title }}" />
-  <meta property="og:description" content="{{ .Summary }}" />
+  {{ partial "twitter_graph.html" . }}
 
   <!-- Webmentions.io -->
   <link rel="webmention" href="https://webmention.io/duffy.xyz/webmention" />
   <link rel="pingback" href="https://webmention.io/duffy.xyz/xmlrpc" />
-
-  {{ if .Params.image }}
-    {{ $image :=  (print "/" .File.Dir .Params.image) }}
-    {{ with $image }}
-        {{ with ($.Site.GetPage (path.Dir .)).Resources.GetMatch (path.Base .) }}
-            {{ $r := .Resize "1400x q90" }}
-            <meta property="og:image" content="https://duffy.xyz{{ $r.RelPermalink }}" />
-        {{ end }}
-    {{ end }}
-  {{ else }}
-    <meta property="og:image" content="https://duffy.xyz/img/content/about/self-3-small.png" />
-  {{ end }}
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/fslightbox.min.css">
