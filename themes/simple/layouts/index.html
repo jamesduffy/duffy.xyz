@@ -14,7 +14,7 @@
 </article>
 
 <h2>Recent Posts</h2>
-{{ $paginator := .Paginate (where .Data.Pages "Type" "in" (slice "posts" )) 5 }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "posts" )) 5 }}
 {{ range $paginator.Pages }}
     {{ partial "posts/list_item.html" . }}
 {{ end }}

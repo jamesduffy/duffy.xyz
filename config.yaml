@@ -13,6 +13,9 @@ author:
     github: jamesduffy
     keybase: dffy
 
+taxonomy:
+  tag: tags
+
 bloggroupby: "year"
 
 permalinks:
