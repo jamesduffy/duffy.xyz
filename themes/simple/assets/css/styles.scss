@@ -172,9 +172,7 @@ img {
 
   select {
     /* Select Reset */
-    border: 1px solid #161718;
     outline:none;
-    background: transparent;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -188,6 +186,11 @@ img {
     /* custom select appearance */
     padding: 12px 55px 15px 15px;
     font-size: 14px;
+
+    &:active, &:focus {
+      box-shadow: none;
+      margin-left: 3px;
+    }
 
     &:after {
       position: absolute;

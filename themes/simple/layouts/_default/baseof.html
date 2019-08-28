@@ -93,7 +93,7 @@
         </ul>
 
         <form>
-            <select onchange="window.location.assign(this.options[this.selectedIndex].value)">
+            <select class="card" onchange="window.location.assign(this.options[this.selectedIndex].value)">
                 <option value="">Go to page...</option>
                 {{ range .Site.Menus.main }}
                 <option value="{{.URL}}">{{ .Name }}</option>
