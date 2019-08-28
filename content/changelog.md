@@ -5,6 +5,11 @@ draft: false
 hide_date: true
 ---
 
+## August 27, 2019
+- Design refresh of fonts, `.cards` and body `background -color`
+- Moved journal entries to posts
+- Changed post URL structure to `/:title/`
+
 ## August 22, 2019
 - Added [Indieweb](https://indieweb.org/) microformats to journal and global h-card
 

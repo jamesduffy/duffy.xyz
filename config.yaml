@@ -4,6 +4,9 @@ languageCode:  "en-us"
 title: "James Duffy"
 theme: "simple"
 
+author:
+    name: "James Duffy"
+
 bloggroupby: "year"
 
 permalinks:
