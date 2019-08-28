@@ -24,9 +24,9 @@ menu:
     name: About
     url: /
     weight: -200
-  - identifier: posts
-    name: Posts
-    url: /posts/
+  - identifier: archive
+    name: Archive
+    url: /archive/
     weight: -100
   - identifier: photography
     name: Photography

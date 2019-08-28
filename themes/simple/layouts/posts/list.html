@@ -12,7 +12,7 @@
 
       <ul>
         {{ range .Pages }}
-          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a> {{ if .Draft }}<span class="tag tag-alert">Draft</span>{{end}}</li>
         {{ end }}
       </ul>
     </section>

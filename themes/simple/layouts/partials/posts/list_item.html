@@ -1,0 +1,30 @@
+<article class="h-entry hentry">
+    <header>
+        <h3 class="p-name entry-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ if .Draft }}<span class="tag tag-alert">Draft</span>{{end}}
+        </h3>
+
+        <div class="meta">
+            Posted on <time class="dt-published" datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">{{ .PublishDate.Format "January 2, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">James Duffy</a>
+        </div>
+
+        <div class="tag-container">
+
+        </div>
+    </header>
+
+    {{ if .Params.summary }}
+        <p class="p-summary">{{ .Params.summary }}</p>
+    {{ else }}
+        {{ .Summary }}
+    {{ end }}
+
+    {{ $tags := index $.Site.Taxonomies "tags" }}
+    {{ range .Params.Tags }}
+    <a href="/tags/{{ . }}" class="tag p-category">{{ . }}</a>
+    {{ end }}
+
+</article>
+
+<hr>

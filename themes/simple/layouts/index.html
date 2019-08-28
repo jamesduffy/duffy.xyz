@@ -10,11 +10,13 @@
         {{ end }}
     </header>
 
-    {{ if .Params.toc }}
-        {{ partial "table_of_contents.html" . }}
-    {{ end }}
-
     <main>{{ .Content }}</main>
-
 </article>
+
+<h2>Recent Posts</h2>
+{{ $paginator := .Paginate (where .Data.Pages "Type" "in" (slice "posts" )) 5 }}
+{{ range $paginator.Pages }}
+    {{ partial "posts/list_item.html" . }}
+{{ end }}
+
 {{ end }}

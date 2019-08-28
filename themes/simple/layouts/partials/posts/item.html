@@ -1,0 +1,30 @@
+<article class="h-entry hentry">
+    {{ if .Params.image }}
+        <img src="https://duffy.xyz/{{ .File.Dir }}{{ .Params.image }}" class="featured-image u-photo" />
+    {{ end }}
+
+    <header>
+        <h1 class="page-title">
+            <a href="{{ .Permalink }}" class="p-name entry-title">{{ .Title }}</a>
+            {{ if .Draft }}<span class="tag tag-alert">Draft</span>{{end}}
+        </h1>
+
+        <div class="meta">
+            Posted on <time class="dt-published" datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">{{ .PublishDate.Format "January 2, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">James Duffy</a>
+        </div>
+
+        <div class="tag-container">
+            {{ $tags := index $.Site.Taxonomies "tags" }}
+            {{ range .Params.Tags }}
+            <a href="/tags/{{ . }}" class="tag p-category">{{ . }}</a>
+            {{ end }}
+        </div>
+    </header>
+
+    {{ if .Params.toc }}
+        {{ partial "table_of_contents.html" . }}
+    {{ end }}
+
+    <main class="e-content">{{ .Content }}</main>
+
+</article>
