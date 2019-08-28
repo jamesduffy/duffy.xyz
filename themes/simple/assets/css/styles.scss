@@ -278,6 +278,30 @@ article {
     }
   }
 
+  .tag {
+    display: inline-block;
+    padding: .2rem .3rem;
+    background: #f2f2f2;
+    border-radius: 4px;
+    color: #5a5a5a;
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0 .5rem .5rem 0;
+  }
+
+  a.tag {
+    &:hover, &:active {
+      background: #e5e5e5;
+      color: #404040;
+      text-decoration: none;
+    }
+  }
+
+  .tag-alert {
+    color: white;
+    background-color: rgb(255, 90, 95);
+  }
+
   .meta {
     font-style: italic;
     font-size: .9rem;
@@ -308,6 +332,32 @@ article {
     }
   }
 }
+
+
+
+.pagination {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+
+  .page-item {
+    display: inline;
+  }
+
+   a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+
+    &:active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  }
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 
 
