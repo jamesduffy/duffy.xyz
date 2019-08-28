@@ -1,11 +1,17 @@
 ---
-baseURL: "https://duffy.xyz/"
-languageCode:  "en-us"
-title: "James Duffy"
-theme: "simple"
+baseURL: https://duffy.xyz/
+languageCode: en-us
+title: James Duffy
+theme: simple
 
 author:
-    name: "James Duffy"
+    name: James Duffy
+    twitter: duffy0
+    instagram: duffy0
+    flickr: dffy
+    email: james@duffy.xyz
+    github: jamesduffy
+    keybase: dffy
 
 bloggroupby: "year"
 
