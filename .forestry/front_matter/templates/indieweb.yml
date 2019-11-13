@@ -1,0 +1,19 @@
+---
+label: Indieweb
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: boolean
+  name: hide_date
+  label: hide_date
+- type: boolean
+  name: hide_title
+  label: hide_title
+- type: file
+  name: image
+  label: image
