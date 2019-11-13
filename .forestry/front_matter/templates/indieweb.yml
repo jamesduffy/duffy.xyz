@@ -11,9 +11,61 @@ fields:
 - type: boolean
   name: hide_date
   label: hide_date
-- type: boolean
-  name: hide_title
-  label: hide_title
-- type: file
-  name: image
-  label: image
+- name: indieweb
+  type: boolean
+  label: Indieweb
+- name: indieweb_related_type
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - reply
+    - repost
+    - rsvp
+    - like
+    - bookmark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Indieweb Related Type
+  showOnly:
+    field: indieweb
+    value: true
+- name: indieweb_rsvp
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - 'yes'
+    - 'no'
+    - maybe
+    - interested
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Indieweb RSVP
+  showOnly:
+    field: indieweb_related_type
+    value: rsvp
+- name: indieweb_related_title
+  type: text
+  config:
+    required: false
+  label: Indieweb Related Title
+  showOnly:
+    field: indieweb
+    value: true
+- name: indieweb_related_url
+  type: text
+  config:
+    required: false
+  label: Indieweb Related URL
+  showOnly:
+    field: indieweb
+    value: true
