@@ -1,0 +1,31 @@
+version: 2.1
+
+executors:
+  app:
+    docker:
+      - image: circleci/python@3
+
+jobs:
+
+  build:
+    executor: app
+    steps:
+      - checkout
+      - run:
+          name: Install Hugo
+          command: |
+            wget https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_0.59.1_Linux-64bit.tar.gz
+            tar -xvzf hugo_0.59.1_Linux-64bit.tar.gz
+      - run:
+          name: Build Site
+          command: |
+            hugo
+      - store_artifacts:
+          path: public
+          destination: rendered-site
+
+
+workflows:
+  main_workflow:
+    jobs:
+      - build
