@@ -1,31 +1,57 @@
 version: 2.1
 
+
 executors:
-  app:
+  hugo:
     docker:
-      - image: circleci/python:3
+      - image: cibuilds/hugo:0.59.1
+  deployer:
+    docker:
+      - image: ubuntu:18.04
+
 
 jobs:
 
   build:
-    executor: app
+    executor: hugo
     steps:
       - checkout
       - run:
-          name: Install Hugo
-          command: |
-            wget https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_extended_0.59.1_Linux-64bit.tar.gz
-            tar -xvzf hugo_extended_0.59.1_Linux-64bit.tar.gz
-      - run:
           name: Build Site
           command: |
-            ./hugo
+            hugo
       - store_artifacts:
           path: public
           destination: rendered-site
+      - save_cache:
+          key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
+          paths:
+            - public
+  deploy:
+    executor: deployer
+    steps:
+      - run:
+          name: Install Rsync
+          command: sudo apt install rsync
+      - restore_cache:
+          key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
+      - add_ssh_keys:
+          fingerprints:
+            - "c3:b4:bd:a0:5b:a1:67:bb:17:fe:37:b0:cb:6f:90:a4"
+      - run:
+          name: Deploy via rsync
+          command: |
+            rsync -vr ./public/ duffy.xyz:/var/www/duffy.xyz --delete
 
 
 workflows:
   main_workflow:
     jobs:
       - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
