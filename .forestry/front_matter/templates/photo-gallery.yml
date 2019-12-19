@@ -5,5 +5,24 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: featured_image
+  type: file
+  config:
+    maxSize: 250
+  label: Featured Image
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
