@@ -75,3 +75,5 @@ fields:
   showOnly:
     field: indieweb
     value: true
+pages:
+- content/posts/2012/ordered-my-first-fixed-gear.md
