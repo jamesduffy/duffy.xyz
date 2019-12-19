@@ -1,7 +1,6 @@
 ---
 date: 2017-05-15T14:41:30.072+00:00
 title: Make opening your terminal fun
-image: make-terminal-fun-again.png
 aliases:
 - "/journal/2017/make-opening-your-terminal-fun/"
 featured_image: "/make-terminal-fun-again.png"

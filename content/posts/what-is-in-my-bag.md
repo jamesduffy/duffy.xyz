@@ -1,7 +1,6 @@
 ---
 date: 2015-01-03T02:26:00.000+00:00
 title: What is in my bag?
-image: what-is-in-my-bag.jpg
 aliases:
 - "/journal/2015/what-is-in-my-bag-2015/"
 featured_image: "/what-is-in-my-bag.jpg"

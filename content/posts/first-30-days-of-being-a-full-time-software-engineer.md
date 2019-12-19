@@ -1,7 +1,6 @@
 ---
 date: 2015-06-02T01:04:00.000+00:00
 title: First 30 Days of Being a Full-time Software Engineer
-image: first-30-days-software-engineer.png
 aliases:
 - "/journal/2015/first-30-days-of-being-a-full-time-software-engineer/"
 featured_image: "/first-30-days-software-engineer.png"
