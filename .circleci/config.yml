@@ -1,54 +1,54 @@
-version: 2.1
+# version: 2.1
 
 
-executors:
-  hugo:
-    docker:
-      - image: cibuilds/hugo:0.61.0
-  deployer:
-    docker:
-      - image: ubuntu:18.04
+# executors:
+#   hugo:
+#     docker:
+#       - image: cibuilds/hugo:0.61.0
+#   deployer:
+#     docker:
+#       - image: ubuntu:18.04
 
 
-jobs:
+# jobs:
 
-  build:
-    executor: hugo
-    steps:
-      - checkout
-      - run:
-          name: Build Site
-          command: |
-            hugo
-      - save_cache:
-          key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
-          paths:
-            - public
-  deploy:
-    executor: deployer
-    steps:
-      - run:
-          name: Install Rsync
-          command: sudo apt install rsync
-      - restore_cache:
-          key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
-      - add_ssh_keys:
-          fingerprints:
-            - "c3:b4:bd:a0:5b:a1:67:bb:17:fe:37:b0:cb:6f:90:a4"
-      - run:
-          name: Deploy via rsync
-          command: |
-            rsync -vr ./public/ duffy.xyz:/var/www/duffy.xyz --delete
+#   build:
+#     executor: hugo
+#     steps:
+#       - checkout
+#       - run:
+#           name: Build Site
+#           command: |
+#             hugo
+#       - save_cache:
+#           key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
+#           paths:
+#             - public
+#   deploy:
+#     executor: deployer
+#     steps:
+#       - run:
+#           name: Install Rsync
+#           command: apt install rsync
+#       - restore_cache:
+#           key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
+#       - add_ssh_keys:
+#           fingerprints:
+#             - "c3:b4:bd:a0:5b:a1:67:bb:17:fe:37:b0:cb:6f:90:a4"
+#       - run:
+#           name: Deploy via rsync
+#           command: |
+#             rsync -vr ./public/ duffy.xyz:/var/www/duffy.xyz --delete
 
 
-workflows:
-  main_workflow:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - master
+# workflows:
+#   main_workflow:
+#     jobs:
+#       - build
+#       - deploy:
+#           requires:
+#             - build
+#           filters:
+#             branches:
+#               only:
+#                 - master
