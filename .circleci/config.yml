@@ -4,7 +4,7 @@ version: 2.1
 executors:
   hugo:
     docker:
-      - image: cibuilds/hugo:0.59.1
+      - image: cibuilds/hugo:0.61.0
   deployer:
     docker:
       - image: ubuntu:18.04
@@ -20,9 +20,6 @@ jobs:
           name: Build Site
           command: |
             hugo
-      - store_artifacts:
-          path: public
-          destination: rendered-site
       - save_cache:
           key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
           paths:
