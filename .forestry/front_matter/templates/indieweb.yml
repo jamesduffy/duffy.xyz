@@ -76,7 +76,10 @@ fields:
     field: indieweb
     value: true
 pages:
-- content/posts/2012/ordered-my-first-fixed-gear.md
+- content/posts/2015/first-30-days-of-being-a-full-time-software-engineer.md
+- content/posts/2015/twitter-markov-generator.md
+- content/posts/2015/what-is-in-my-bag.md
+- content/posts/2017/make-opening-your-terminal-fun.md
 - content/posts/new-design-for-myspace-is-it-enough.md
 - content/posts/sending-the-right-message.md
 - content/posts/the-iphone-ios-6-versus-android-4-1-debate-android.md
