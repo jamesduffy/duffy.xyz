@@ -1,16 +1,22 @@
 ---
 label: Indieweb
-hide_body: true
+hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: boolean
   name: hide_date
-  label: hide_date
+  label: Hide Date
+- name: featured_image
+  type: file
+  config:
+    maxSize: 250
+  label: Featured Image
 - name: indieweb
   type: boolean
   label: Indieweb
