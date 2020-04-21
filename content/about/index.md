@@ -10,8 +10,6 @@ aliases:
 
 I am a passionate DevOps/Infrastructure Engineer who loves building things for the web. I live and work in San Francisco. Spending long hours programming and scaling machines in the cloud is my norm. Most of my career has been building high traffic websites and the infrastructure that runs them.
 
-{{< instagram B-ngUGijtTj >}}
-
 # Things I Use
 ## Technology
 
