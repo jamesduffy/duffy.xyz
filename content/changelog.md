@@ -5,6 +5,9 @@ draft: false
 hide_date: true
 ---
 
+## November 3, 2019
+- Migrate content to Django based website and stop using hugo
+
 ## August 28, 2019
 - Fixed design of mobile page `select` navigation
 
