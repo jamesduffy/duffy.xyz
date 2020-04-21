@@ -77,8 +77,10 @@ fields:
     value: true
 pages:
 - content/posts/90-days-of-aws-eks-in-production.md
+- content/posts/fixing-random-aws-alb-502-bad-gateways-with-uwsgi.md
 - content/posts/getting-every-microsecond-out-of-uwsgi.md
 - content/posts/kubernetes-chaos-engineering.md
+- content/posts/mr-rogers-had-a-simple-set-of-rules-for-talking-to-children.md
 - content/posts/new-design-for-myspace-is-it-enough.md
 - content/posts/sending-the-right-message.md
 - content/posts/the-iphone-ios-6-versus-android-4-1-debate-android.md
