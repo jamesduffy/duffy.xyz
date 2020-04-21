@@ -29,7 +29,9 @@ jobs:
     steps:
       - run:
           name: Install Rsync
-          command: apt install rsync
+          command: |
+            apt update
+            apt install -y rsync
       - restore_cache:
           key: hugo-build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
       - add_ssh_keys:
