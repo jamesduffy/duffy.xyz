@@ -35,7 +35,3 @@ menu:
     name: Photography
     url: /photography/
     weight: -90
-  - identifier: radio
-    name: Ham Radio
-    url: /radio/
-    weight: -80
