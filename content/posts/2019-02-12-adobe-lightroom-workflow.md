@@ -4,6 +4,8 @@ date: 2019-02-12T16:13:29-08:00
 draft: false
 aliases:
     - /journal/2019/adobe-lightroom-workflow/
+tags:
+    - photography
 ---
 
 My current solution (all personal photography) is that I have one large Lightroom catalog. I have everything from 2015-2018. Everything is organized by `year/month-day shortname`. For special things like multi-day vacations they get merged into a single folder. I have the last 3-6 months of raw files saved inside of my local Dropbox folder for some basic backups and everything older gets moved to my Synology NAS.

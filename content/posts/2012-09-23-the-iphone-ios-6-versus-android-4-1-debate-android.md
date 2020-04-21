@@ -8,7 +8,6 @@ indieweb_related_type = "repost"
 indieweb_related_url = "https://www.csusignal.com/editorial/article_d3397bf1-656b-5edb-9f37-8c6e1fdf833a.html"
 indieweb_rsvp = ""
 title = " The iPhone iOS 6 versus Android 4.1 debate: Android"
-
 +++
 There is no doubt that Apple has revolutionized the phone industry with the iPhone, but it has taken 6 iterations of the phone for any significant change since its initial release. Apple has become stagnant. The only reason for the recent breath of fresh air is that Steve Jobs died and Apple has been forced to think on their own. Except they can’t.
 
