@@ -1,6 +1,6 @@
 ---
-date: 2013-11-17 20:00:00
 title: "Moving to Digital Ocean"
+date: 2013-11-17 20:00:00
 aliases:
     - /journal/2013/moving-to-digital-ocean/
 ---

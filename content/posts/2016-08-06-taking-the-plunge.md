@@ -1,6 +1,6 @@
 ---
-date: 2016-08-06 03:00:00
 title: "Taking the Plunge"
+date: 2016-08-06 03:00:00
 aliases:
     - /journal/2016/taking-the-plunge/
 ---

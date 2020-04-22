@@ -1,6 +1,6 @@
 ---
-date: 2013-08-05 17:02:00.072518
 title: "College Newsroom Workflow"
+date: 2013-08-05 17:02:00.072518
 aliases:
     - /journal/2013/college-newsroom-workflow/
 ---

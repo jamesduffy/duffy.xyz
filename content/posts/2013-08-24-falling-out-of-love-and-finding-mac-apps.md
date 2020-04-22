@@ -1,6 +1,6 @@
 ---
-date: 2013-08-24 19:00:00
 title: "Falling out of love and finding Mac Apps"
+date: 2013-08-24 19:00:00
 aliases:
     - /journal/2013/falling-out-of-love-and-finding-mac-apps/
 ---

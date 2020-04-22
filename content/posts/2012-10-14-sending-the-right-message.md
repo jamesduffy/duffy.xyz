@@ -1,15 +1,11 @@
-+++
-date = 2012-10-14T07:00:00Z
-featured_image = ""
-hide_date = false
-indieweb = true
-indieweb_related_title = "CSU Signal"
-indieweb_related_type = "repost"
-indieweb_related_url = "https://www.csusignal.com/editorial/article_53a423ec-6b88-51ef-8b19-df29652d9503.html"
-indieweb_rsvp = ""
-title = " Sending the right message "
-
-+++
+---
+title: " Sending the right message "
+date: 2012-10-14T07:00:00Z
+indieweb:
+    related_title: "CSU Signal"
+    related_type: "repost"
+    related_url: "https://www.csusignal.com/editorial/article_53a423ec-6b88-51ef-8b19-df29652d9503.html"
+---
 There is no doubt that we are more connected than ever before, but I am fatigued with messaging my friends and family. There is no single best way to contact each other. We are constantly battling in our head whether to send an SMS, Facebook Message, iMessage or email.
 
 In the early 2000s, Research In Motion (RIM) owned the smartphone market and everyone who was anyone was using Blackberry Messenger. If you didn’t have a Blackberry, chances are you were a social outcast (at least that’s how it was at the high schools I attended). Fast forward to today and we have iMessages and Facebook messenger fighting to become the defacto messaging platform, except they both suck.

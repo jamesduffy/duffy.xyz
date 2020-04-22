@@ -1,6 +1,6 @@
 ---
-date: 2013-08-16 19:00:00
 title: "My summer internship comes to a close"
+date: 2013-08-16 19:00:00
 aliases:
     - /journal/2013/my-summer-internship-comes-to-a-close/
 ---

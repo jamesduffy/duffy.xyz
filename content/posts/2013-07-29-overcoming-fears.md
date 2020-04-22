@@ -1,6 +1,6 @@
 ---
-date: 2013-07-29 19:00:00
 title: "Overcoming Fears"
+date: 2013-07-29 19:00:00
 aliases:
     - /journal/2013/overcoming-fears/
 ---

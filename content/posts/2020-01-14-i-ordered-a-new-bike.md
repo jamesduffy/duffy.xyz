@@ -1,18 +1,11 @@
-+++
-date = 2020-01-14T08:00:00Z
-featured_image = "/AllantPlus8S_20_30265_A_Alt9.jpeg"
-hide_date = false
-indieweb = false
-indieweb_related_title = ""
-indieweb_related_type = ""
-indieweb_related_url = ""
-indieweb_rsvp = ""
-title = "I ordered a new bike"
+---
+title: "I ordered a new bike"
+date: 2020-01-14T08:00:00Z
+featured_image: "/AllantPlus8S_20_30265_A_Alt9.jpeg"
+---
+I bought a new bike. It took me months of research, but I finally pulled the trigger on the [Trek Allant+ 8s](https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/allant/allant-8s/p/30265/). The plan is to use this e-bike to commute to and from work and around the city. 
 
-+++
-I bought a new bike. It took me months of research, but I finally pulled the trigger on the \[Trek Allant+ 8s\]([https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/allant/allant-8s/p/30265/](https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/allant/allant-8s/p/30265/ "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/allant/allant-8s/p/30265/")). The plan is to use this e-bike to commute to and from work and around the city. 
-
-When I was in college I didn't own a car and hated to drive (I still do). I didn't get my drivers license until I was 18 and then didn't drive again for almost 5 years. My primary form of transportation was one of my two bikes. It was either my Specialized Sirrus Sport or more often my \[modified State Bike fixie\]([https://duffy.xyz/2012/ordered-my-first-fixed-gear/](https://duffy.xyz/2012/ordered-my-first-fixed-gear/ "https://duffy.xyz/2012/ordered-my-first-fixed-gear/")). 
+When I was in college I didn't own a car and hated to drive (I still do). I didn't get my drivers license until I was 18 and then didn't drive again for almost 5 years. My primary form of transportation was one of my two bikes. It was either my Specialized Sirrus Sport or more often my [modified State Bike fixie](/2012/ordered-my-first-fixed-gear/). 
 
 Since graduating college and moving to San Francisco I have taken muni for commuting to work and the car on weekends for shopping and groceries and everything else. I have kept my bikes, but they have been collecting dust for years. I have only ridden a bike in the city a handful of times. Mostly due to concerns over safety and my own lack of confidence on the streets here. Despite riding all the time in Turlock the city feels different and a lot more busy than I am used to.
 

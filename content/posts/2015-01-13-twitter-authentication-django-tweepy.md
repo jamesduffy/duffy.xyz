@@ -1,6 +1,6 @@
 ---
-date: 2015-01-13 00:36:00
 title: "Twitter Authentication in Django with Tweepy"
+date: 2015-01-13 00:36:00
 aliases:
     - /journal/2015/twitter-authentication-in-django-with-tweepy/
 ---

@@ -1,15 +1,11 @@
-+++
-date = 2012-10-09T07:00:00Z
-featured_image = ""
-hide_date = false
-indieweb = true
-indieweb_related_title = "CSU Signal"
-indieweb_related_type = "repost"
-indieweb_related_url = "https://www.csusignal.com/editorial/article_9559e893-5adb-5978-bbb5-d4258e6c8e0a.html"
-indieweb_rsvp = ""
-title = "New design for Myspace, is it enough? "
-
-+++
+---
+title: "New design for Myspace, is it enough?"
+date: 2012-10-09T07:00:00Z
+indieweb:
+    related_title: "CSU Signal"
+    related_type: "repost"
+    related_url: "https://www.csusignal.com/editorial/article_9559e893-5adb-5978-bbb5-d4258e6c8e0a.html"
+---
 When I was in high school Myspace was all the rage. We spent hours taking bulletin quizzes, changing the music on our profiles and rearranging our top eight friends depending on who we were dating or hanging out with most. That all changed when Facebook opened up for high school students in 2005 and we all went running to greener pastures. MySpace has since become akin to a forgotten 80’s band who brings up good memories through thick and thin.
 
 That may all change as Justin Timberlake (owner of Myspace) teased a total redesign of Myspace in an [online video](https://vimeo.com/50071857). This is the biggest shift for Myspace since its founding and has obviously been in the works for a few years to focus on their biggest market, music.

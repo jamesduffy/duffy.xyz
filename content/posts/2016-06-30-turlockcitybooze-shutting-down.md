@@ -1,6 +1,6 @@
 ---
-date: 2016-06-30 01:03:00
 title: "TurlockCityBooze shutting down"
+date: 2016-06-30 01:03:00
 aliases:
     - /journal/2016/turlockcitybooze-shutting-down/
 ---

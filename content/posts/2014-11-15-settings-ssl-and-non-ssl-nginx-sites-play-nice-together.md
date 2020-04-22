@@ -1,6 +1,6 @@
 ---
-date: 2014-11-15 02:29:00
 title: "Settings up SSL and non SSL Nginx sites to play nice together"
+date: 2014-11-15 02:29:00
 aliases:
     - /journal/2014/settings-up-ssl-and-non-ssl-nginx-sites-to-play-nice-together/
 ---

@@ -1,15 +1,9 @@
 ---
-date: 2015-01-27T02:08:00.000+00:00
 title: Twitter Markov Generator
+date: 2015-01-27T02:08:00.000+00:00
 aliases:
     - "/journal/2015/twitter-markov-generator/"
 featured_image: "/twitter-markov-generator-screenshot.png"
-hide_date: false
-indieweb: false
-indieweb_related_type: ''
-indieweb_rsvp: ''
-indieweb_related_title: ''
-indieweb_related_url: ''
 tags:
     - twitter
 ---

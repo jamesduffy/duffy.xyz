@@ -1,6 +1,6 @@
 ---
-date: 2015-05-28 01:06:00
 title: "Side Projects"
+date: 2015-05-28 01:06:00
 aliases:
     - /journal/2015/side-projects/
 ---

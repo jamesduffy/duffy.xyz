@@ -1,6 +1,6 @@
 ---
-date: 2014-12-05 02:28:00
 title: "Long time editor says goodbye and good luck"
+date: 2014-12-05 02:28:00
 aliases:
     - /journal/2014/long-time-editor-says-goodbye-and-good-luck/
 ---

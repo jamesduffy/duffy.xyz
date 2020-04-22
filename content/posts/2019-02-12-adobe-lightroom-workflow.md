@@ -1,7 +1,6 @@
 ---
 title: Adobe Lightroom Workflow
 date: 2019-02-12T16:13:29-08:00
-draft: false
 aliases:
     - /journal/2019/adobe-lightroom-workflow/
 tags:
