@@ -4,6 +4,8 @@ languageCode: en-us
 title: James Duffy
 theme: simple
 
+enableGitInfo: true
+
 author:
     name: James Duffy
     twitter: duffy0
