@@ -26,8 +26,10 @@ HTTPS Server IP connection reset (444)<br />
 <span style="text-decoration: underline;">http://example.com</span> redirection to https<br />
 <span style="text-decoration: underline;">https://example.com</span> example
 
-<b>/etc/nginx/sites-enabled/default</b>
-<pre><code>server {
+#### `/etc/nginx/sites-enabled/default`
+
+```
+server {
      listen 80 default;
      return 444;
 }
@@ -39,10 +41,12 @@ server {
     ssl_certificate_key /etc/ssl/private/ssl-cert-snakeoil.key;
     return 444;
 }
-</code></pre>
+```
 
-<b>/etc/nginx/sites-enabled/example</b>
-<pre><code>server {
+<strong>/etc/nginx/sites-enabled/example</strong>
+
+```
+server {
     listen  80;
     server_name example.com;
     rewrite ^ https://example.com$request_uri?;
@@ -63,4 +67,4 @@ server {
             proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
     }
 }
-</code></pre>
+```
