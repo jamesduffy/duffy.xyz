@@ -1,5 +1,5 @@
 ---
-title: " Sending the right message "
+title: "Sending the right message"
 date: 2012-10-14T07:00:00Z
 indieweb:
     related_title: "CSU Signal"

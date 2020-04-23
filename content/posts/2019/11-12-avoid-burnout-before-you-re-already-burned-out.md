@@ -1,7 +1,6 @@
 ---
 title: "Avoid Burnout Before You’re Already Burned Out"
 date: 2019-11-12T08:00:00Z
-featured_image: ""
 indieweb:
     related_type: "bookmark"
     related_title: "Avoid Burnout Before You’re Already Burned Out"

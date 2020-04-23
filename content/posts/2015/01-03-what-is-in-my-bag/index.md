@@ -3,7 +3,6 @@ title: What is in my bag?
 date: 2015-01-03T02:26:00.000+00:00
 aliases:
     - "/journal/2015/what-is-in-my-bag-2015/"
-featured_image: "/what-is-in-my-bag.jpg"
 ---
 I always have this bag ready to go at a moments notice. I have perfected my bag after years of college and a few months of being a Software Engineer. With this bag I am ready to handle the day.
 
