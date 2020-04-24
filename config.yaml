@@ -37,3 +37,9 @@ menu:
     name: Photography
     url: /photography/
     weight: -90
+
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 1
