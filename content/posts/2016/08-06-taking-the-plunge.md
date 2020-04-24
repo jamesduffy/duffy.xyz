@@ -7,8 +7,6 @@ aliases:
 
 Today was my last day working for Track Revenue. It was my first job after graduating from California State University, Stanislaus. I learned a lot in the 18 months as part of the Software Engineering team. I was challenged and there were struggles, but ultimately I came out better than I was before.
 
-<!--more-->
-
 When I started working at Track Revenue I was still living at my parents and my girlfriend Aubrey was almost 2 hours away finishing her Senior year at Stan State. Now we live together in San Francisco and I could not be happier.
 
 We are both about to take the plunge into something new. I am going to explore working full-time as a DevOps Engineer and she is going to be teaching 4th grade.

@@ -8,8 +8,6 @@ tags:
 ---
 I recently built a Markov Generator for Twitter in a few hours. The site will look at your last few hundred tweets and randomly try to find something that you might say. It uses probability from your previous tweets to find words that might go together.
 
-<!--more-->
-
 I built this to take a break from applying for Software Engineer positions in SF.
 
 The results can be quite funny and sometimes you might not be able to tell if it is real or not.

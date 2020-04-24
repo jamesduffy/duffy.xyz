@@ -6,11 +6,9 @@ aliases:
 ---
 My favorite and least useful thing I have set up on my laptop is to run `fortune | ponysay` when I open a new bash session.
 
-<!--more-->
-
 In my .bashrc file I have the following snipped:
 
-```
+```bash
 if [ -x /usr/local/bin/ponysay -a -x /usr/local/bin/fortune ]; then
     fortune | ponysay
 fi
@@ -18,7 +16,7 @@ fi
 
 If you want one script to install everything for you:
 
-```
+```bash
 #!/bin/bash
 
 echo 'Installing homebrew'

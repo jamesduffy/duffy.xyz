@@ -7,8 +7,6 @@ aliases:
 
 I joined the California State University, Stanislaus Signal Fall 2011, and I no longer know what I am going to do without seeing the bright and smiling faces of my fellow editors every week.
 
-<!--more-->
-
 I am the last staff member to leave who was at the newspaper B.G.D. (Before Google Docs). When I joined the team, we were still emailing articles around, but I feel like I was a key editor in pushing the move to Google Drive and a more online newsroom.
 
 My job never entailed editing articles, but I have become such a stickler for the AP style guide that I even carry my own copy around with me from time to time. I was the editor sitting in the background making sure the stories made it online and the in-house computer support.

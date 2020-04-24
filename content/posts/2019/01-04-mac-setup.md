@@ -13,8 +13,6 @@ aliases:
 # Intro
 This is a personal help document to that I use to get started on a new Mac. I occasionally come back to this to update it and make sure that my current settings are reflected here, but more often than not it gets updated the next time I setup a new mac.
 
-<!--more-->
-
 # Software
 - 1Password
 - Alfred
@@ -68,7 +66,7 @@ Go to System Preferences > Keyboard > Text > Uncheck "Use smart quotes and dashe
 
 # Development Environment
 
-```
+```bash
 touch ~/.hushlogin
 
 # Install Homebrew
@@ -92,7 +90,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
    - In the profile folder create a folder called chrome
    - In that folder create a file called userChrome.css- Insert the following in the file:
 
-```
+```css
 #TabsToolbar {
     visibility: collapse !important;
 }
@@ -112,7 +110,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 # Python
 
-```
+```bash
 brew install python python3
 pip install --user virtualenvwrapper
 Add to .zshrc file

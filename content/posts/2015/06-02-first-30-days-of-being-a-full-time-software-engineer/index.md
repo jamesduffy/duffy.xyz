@@ -6,8 +6,6 @@ aliases:
 ---
 I started my first full-time job almost 3 months ago. I wanted to share my accomplishments from the first 30 days.
 
-<!--more-->
-
 When I first joined there was no server monitoring and the team had no idea the real time usage of our infrastructure. During my second week I had set up `collectd` on each server and a central InfluxDB and Grafana monitoring server. We have adapted it a bit since, but we now have a TV set up in the office showing the team the real time usage.
 
 We have been able to identify and solve issues before they escalate because of the monitoring I have set up.

@@ -9,11 +9,9 @@ I learned the hard way recently the importance of setting additional Nginx serve
 
 When I created a new server with an SSL connection and did not set a connection reset for the other sites that were not using SSL I found Google and other search engines were showing the wrong URL in my search results.
 
-<!--more-->
-
 It took almost two weeks for the fix to propagate to all the search engines after I fixed it so don’t make the same mistake I did.
 
-<hr>
+---
 
 Make sure to create Nginx servers for HTTPS and HTTP for each website the machine will be hosting.
 

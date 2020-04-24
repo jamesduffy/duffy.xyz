@@ -6,8 +6,6 @@ aliases:
 ---
 I always have this bag ready to go at a moments notice. I have perfected my bag after years of college and a few months of being a Software Engineer. With this bag I am ready to handle the day.
 
-<!--more-->
-
 **TimBuk2 H.A.L. 2011 Backpack (no longer available)**
 
 I absolutely love this bag and it sucks they don’t have a newer version available although you could probably find a close equivalent I am not sure it would have as many small pockets as this one and still have a huge open space where on weekends I can store clothes and bathroom necessities.

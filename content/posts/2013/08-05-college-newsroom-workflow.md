@@ -7,8 +7,6 @@ aliases:
 
 For the past few years I have worked for the California State University, Stanislaus Signal newspaper as their Online Editor. Going into the job I had no experience with a newspaper or operating a website with a dedicated audience with constant traffic.
 
-<!--more-->
-
 When I started working for the newspaper the primary distribution method was a weekly newspaper in newsstands around campus and articles were submitted by the student writers through email in a text/word file.
 
 Seriously dated for today’s standards.
