@@ -3,6 +3,8 @@ title: "Changelog"
 date: 2018-01-08T13:53:33-08:00
 draft: false
 hide_date: true
+aliases:
+    - /changelog/
 ---
 
 ## November 3, 2019

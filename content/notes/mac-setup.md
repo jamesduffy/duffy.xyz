@@ -4,8 +4,8 @@ date: 2019-01-04T16:13:29-08:00
 draft: false
 toc: true
 summary: "This is a personal help document to that I use to get started on a new Mac. I occasionally come back to this to update it and make sure that my current settings are reflected here, but more often than not it gets updated the next time I setup a new mac."
-url: "/mac-setup/"
 aliases:
+    - /mac-setup/
     - /2019/mac-setup-2019/
     - /journal/2019/mac-setup-2019/
 ---

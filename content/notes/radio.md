@@ -4,6 +4,8 @@ date: 2018-01-08T12:46:19-08:00
 draft: false
 toc: true
 hide_date: true
+aliases:
+    - /radio/
 ---
 
 # Why 
@@ -26,8 +28,6 @@ After you get licensed there is a whole world of things to explore. Below I have
 [APRS (Automatic Packet Reporting System)](http://aprs.org/) is a digital communication system that from as far as I can tell right now is mainly used for sharing your position, basic statuses and simple messages.
 
 One of the fun things that I have found is that there is a way to send SMS messages to friends and family through a SMS gateway. This could be something fun to try out and can be useful if you do not have cell service, but can get your message into the APRS network. [Check out the SMS gateway for more instructions](http://smsgte.wixsite.com/smsgte).
-
-To be continued...
 
 ## D-Star
 ### Overview
@@ -58,8 +58,6 @@ Working satellites is something I have yet to do, but I am extremely interested 
 - [Amateur radio satellite passes for the next 6 hours](http://www.n2yo.com/passes/amateur-radio.php)
 - [Arrow Handheld Antenna](http://arrowantennas.com/arrowii/146-437.html)
 - [Radio Amateur Satellite Corporation (AMSAT)](https://www.amsat.org/)
-
-To be continued...
 
 # Equipment
 Below is a list I will try to keep updated with the equipment that I am currently using.
