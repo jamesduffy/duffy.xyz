@@ -3,6 +3,8 @@ title: First 30 Days of Being a Full-time Software Engineer
 date: 2015-06-02T01:04:00.000+00:00
 aliases:
     - "/journal/2015/first-30-days-of-being-a-full-time-software-engineer/"
+tags:
+    - grafana
 ---
 I started my first full-time job almost 3 months ago. I wanted to share my accomplishments from the first 30 days.
 

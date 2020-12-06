@@ -5,5 +5,7 @@ indieweb:
     related_type: "bookmark"
     related_title: "Getting Every Microsecond Out of uWSGI"
     related_url: "https://blog.codeship.com/getting-every-microsecond-out-of-uwsgi/"
+tags:
+    - indieweb
 ---
 Good tips for testing performance of uWSGI with common options I always forget about.
