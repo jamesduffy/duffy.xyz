@@ -6,7 +6,7 @@ aliases:
 ---
 My favorite and least useful thing I have set up on my laptop is to run `fortune | ponysay` when I open a new bash session.
 
-In my .bashrc file I have the following snipped:
+In my `.bashrc` file I have the following snipped:
 
 ```bash
 if [ -x /usr/local/bin/ponysay -a -x /usr/local/bin/fortune ]; then

@@ -15,18 +15,19 @@ It took almost two weeks for the fix to propagate to all the search engines afte
 
 Make sure to create Nginx servers for HTTPS and HTTP for each website the machine will be hosting.
 
-I made sure that the default configuration (IP without the domain or unknown server name would just reset the connection and not try to load another site. I also made sure that I forced SSL on sites that had it by redirecting users if they weren&#8217;t using SSL.
+I made sure that the default configuration (IP without the domain or unknown server name would just reset the connection and not try to load another site. I also made sure that I forced SSL on sites that had it by redirecting users if they weren't using SSL.
 
-On sites that don&#8217;t use SSL I made a server running on SSL with the correct name that would reset the connection. I could possibly redirect the user back to an HTTP connection, but I don&#8217;t think it is necessary and have not tried it myself to make sure that it works.
+On sites that don't use SSL I made a server running on SSL with the correct name that would reset the connection. I could possibly redirect the user back to an HTTP connection, but I don't think it is necessary and have not tried it myself to make sure that it works.
 
-HTTP Server IP connection reset (444)<br />
-HTTPS Server IP connection reset (444)<br />
-<span style="text-decoration: underline;">http://example.com</span> redirection to https<br />
-<span style="text-decoration: underline;">https://example.com</span> example
+- HTTP Server IP connection reset (444)
+- HTTPS Server IP connection reset (444)
+- `http://example.com` redirection to https
+- `https://example.com` example
 
 #### `/etc/nginx/sites-enabled/default`
 
-```
+
+```SquidConf
 server {
      listen 80 default;
      return 444;
@@ -41,9 +42,9 @@ server {
 }
 ```
 
-<strong>/etc/nginx/sites-enabled/example</strong>
+#### `/etc/nginx/sites-enabled/example`
 
-```
+```SquidConf
 server {
     listen  80;
     server_name example.com;
