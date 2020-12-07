@@ -6,6 +6,12 @@ theme: duffy2021
 
 enableGitInfo: true
 
+params:
+  title: James Duffy
+  description: Hi! 👋 I'm James Duffy. I'm an infrastructure engineer, cyclist, and photographer.
+  images:
+  - /img/content/about/self-3-small.png
+
 author:
   name: James Duffy
   description: I'm Duffy, a Devops Engineer writing code for fun and profit.
