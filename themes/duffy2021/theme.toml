@@ -1,0 +1,17 @@
+name = "Duffy 2021"
+
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+
+description = ""
+
+homepage = "https://duffy.xyz/"
+
+tags = []
+features = []
+
+min_version = "0.41.0"
+
+[author]
+  name = "James Duffy"
+  homepage = "https://duffy.xyz/"

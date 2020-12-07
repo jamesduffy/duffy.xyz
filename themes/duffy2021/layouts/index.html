@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+
+    <body class="">
+        {{ partial "header.html" . }}
+
+        <main>
+            {{- $image := resources.Get "img/bike.png" -}}
+            {{ $image := $image.Resize "1000x q70" }}
+            <div class="full-page" style="background-image: url('{{ $image.Permalink }}')">
+                <section>
+                    <h1>Hi! 👋 I'm James Duffy.<br>I'm an infrastructure engineer, cyclist, and photographer.</h1>
+                </section>
+            </div>
+        </main>
+
+        {{ block "footer" . }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+
+        {{ partial "javascript.html" . }}
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+{{ range (.Data.Pages.GroupByDate "2006") }}
+<hr>
+
+<h2 id="{{ .Key }}">{{ .Key }}&nbsp;<a class="headline-hash" href="#{{ .Key }}">#</a></h2>
+
+  {{ range .Pages }}
+  <article>
+    <header>
+        <h3>
+            <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+            </a>
+        </h3>
+
+        <div class="meta">
+            // Posted on <time class="dt-published" datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+        </div>
+    </header>
+  </article>
+  {{ end }}
+
+{{ end }}
+
+{{ end }}

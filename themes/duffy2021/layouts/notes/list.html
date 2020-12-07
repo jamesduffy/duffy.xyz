@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="card">
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  {{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
+  {{ range .Data.Pages.ByTitle }}
+    <!-- get the first character of each title. Assumes that the title is never empty! -->
+    {{ $firstChar := substr .Title 0 1 | upper }}
+
+    <!-- in case $firstChar is a letter -->
+    {{ if $firstChar | in $letters }}
+      <!-- get the current letter -->
+      {{ $curLetter := $.Scratch.Get "curLetter" }}
+      <!-- if $curLetter isn't set or the letter has changed -->
+      {{ if ne $firstChar $curLetter }}
+      <!-- update the current letter and print it -->
+        {{ $.Scratch.Set "curLetter" $firstChar }}
+        <h3>{{ $firstChar }}</h3>
+      {{ end }}
+
+     <ul>
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+     </ul>
+    {{ end }}
+  {{ end }}
+</div>
+
+{{ end }}

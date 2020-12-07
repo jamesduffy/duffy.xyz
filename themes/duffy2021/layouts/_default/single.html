@@ -1,0 +1,68 @@
+{{ define "main" }}
+<article class="card h-entry hentry">
+    <header class="text-center">
+        <h1><span class="p-name entry-title underline">{{ .Title }}</span></h1>
+
+        {{ if (not .Params.hide_byline) }}
+        <div class="meta">
+            // By <a rel="author" class="p-author" href="{{ .Site.BaseURL }}">James Duffy</a> • <a href="{{ .RelPermalink }}">{{ partial "time.html" . }}</a>
+        </div>
+        {{ end }}
+    </header>
+
+
+    {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ with $img }}
+       {{ $big := .Resize "1500x" }}
+       {{ $small := $big.Resize "750x" }}
+        <img srcset="{{ $small.RelPermalink }} 1x, {{ $big.RelPermalink }} 2x" alt="{{ $img.Title }}" width="{{ $big.Width }}" class="">
+    {{ end }}
+
+    {{ if .Params.toc }}
+        {{ partial "table_of_contents.html" . }}
+    {{ end }}
+
+    <div class="e-content">
+        {{ if isset .Params "indieweb" }}
+        <blockquote>
+            {{ if eq .Params.indieweb.related_type "rsvp" }}
+                RSVP: <span class="p-rsvp">{{ .Params.indieweb.rsvp }}</span> to <a href="{{ .Params.indieweb.related_url }}" class="u-in-reply-to">{{ .Params.indieweb.related_title }}</a>
+            {{ else if eq .Params.indieweb.related_type "bookmark" }}
+                Bookmark of <a class="u-bookmark-of h-cite" target="_blank" href="{{ .Params.indieweb.related_url }}">{{ .Params.indieweb.related_title }}</a>
+            {{ else if eq .Params.indieweb.related_type "reply" }}
+                In reply to <a class="in-reply-to" href="{{ .Params.indieweb.related_url }}">{{ .Params.indieweb.related_title }}</a>
+            {{ else if eq .Params.indieweb.related_type "repost" }}
+                Repost of <a class="repost-of" href="{{ .Params.indieweb.related_url }}">{{ .Params.indieweb.related_title }}</a>
+            {{ else if eq .Params.indieweb.related_type "like" }}
+                Liked <a class="u-like-of" href="{{ .Params.indieweb.related_url }}">{{ .Params.indieweb.related_title }}</a>
+            {{ end }}
+        </blockquote>
+        {{ end }}
+
+        {{ partial "header-hash.html" .Content }}
+    </div>
+
+    {{ if isset .Params "tags" }}
+    <ul class="tags">
+        {{ range .Params.tags }}
+        <li><a class="tag" href="/tags/{{ . }}">{{ . }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</article>
+
+<!--     <aside>
+        <div class="aside-content">
+            <section>
+                <img src="/img/content/about/self-3.jpg" alt="{{ .Site.Params.author.name }}" class="avatar">
+
+                <p>{{ .Site.Params.author.description }}</p>
+            </section>
+
+        </div>
+    </aside> -->
+
+{{ end }}
+
+
+

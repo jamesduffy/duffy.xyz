@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="card">
+    <header class="text-center">
+        <h1><span class="underline">{{ .Title }}</span></h1>
+    </header>
+
+    {{ .Content }}
+
+    <hr>
+
+    {{ partial "posts/list.html" . }}
+
+    {{ partial "pagination.html" . }}
+
+</div>
+{{ end }}

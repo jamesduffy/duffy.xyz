@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article>
+    <header>
+        <h1 class="page-title">{{ .Title }}</h1>
+    </header>
+
+    {{ .Content }}
+
+</article>
+
+<div class="photo-cards-list">
+    {{ range .Pages }}
+    <a class="photo-card" href="{{ .Permalink }}">
+      <div class="photo-card-image">
+        {{ if .Params.image }}
+          {{ $image :=  (print "/" .File.Dir .Params.image) }}
+          {{ with $image }}
+              {{ with ($.Site.GetPage (path.Dir .)).Resources.GetMatch (path.Base .) }}
+                  {{ $r := .Resize "1400x q90" }}
+                  <img src="{{ $r.RelPermalink }}">
+              {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="photo-card-title title-white">
+        <p>{{.Title}}</p>
+      </div>
+    </a>
+    {{ end }}
+</div>
+
+{{ end }}

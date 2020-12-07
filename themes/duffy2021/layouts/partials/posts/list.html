@@ -1,0 +1,37 @@
+<div class="post-list">
+    {{ $paginator := .Paginate (.Pages) 10 }}
+    {{ range $paginator.Pages }}
+    <article>
+        <header>
+            <div class="meta">
+                {{ partial "posts/icon.html" . }} {{ partial "time.html" . }}
+            </div>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        </header>
+
+        {{ if isset .Params "tags" }}
+        <ul class="tags">
+            {{ range .Params.tags }}
+            <li><a class="tag" href="/tags/{{ . }}">{{ . }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+
+        <div class="summary">
+            <div class="image">
+                {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+                {{ with $img }}
+                   {{ $big := .Fit "500x500" }}
+                   {{ $small := .Fit "250x250" }}
+                    <img srcset="{{ $small.RelPermalink }} 1x, {{ $big.RelPermalink }} 2x" alt="{{ $img.Title }}" width="{{ $big.Width }}" class="">
+                {{ end }}
+            </div>
+
+            <div class="content">{{ .Summary }}</div>
+        </div>
+
+    </article>
+
+    <hr>
+    {{ end }}
+</div>

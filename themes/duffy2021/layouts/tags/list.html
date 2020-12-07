@@ -1,0 +1,21 @@
+{{ define "title" }}
+  Posts tagged {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+<div class="card">
+    <header class="text-center">
+        <h1>Tag: <span class="underline">{{ .Title }}</span></h1>
+
+        <h2>{{ len (.Pages) }} posts found</h2>
+    </header>
+
+    {{ .Content }}
+
+    {{ partial "posts/list.html" . }}
+
+    {{ partial "pagination.html" . }}
+
+</div>
+{{ end }}
