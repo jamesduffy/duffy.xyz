@@ -7,4 +7,6 @@ indieweb:
     related_url: "https://landing.google.com/sre/resources/practicesandprocesses/art-of-slos/"
 tags:
     - indieweb
+aliases:
+    - /2019/art-of-slos/
 ---

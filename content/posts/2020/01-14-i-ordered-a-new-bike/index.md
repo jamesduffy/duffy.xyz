@@ -3,6 +3,8 @@ title: "I ordered a new bike"
 date: 2020-01-14T08:00:00Z
 tags:
     - cycling
+aliases:
+    - /2020/ordered-new-bike/
 ---
 I bought a new bike. It took me months of research, but I finally pulled the trigger on the [Trek Allant+ 8s](https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/allant/allant-8s/p/30265/). The plan is to use this e-bike to commute to and from work and around the city. 
 

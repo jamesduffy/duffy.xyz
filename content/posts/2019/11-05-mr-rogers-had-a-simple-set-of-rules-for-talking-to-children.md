@@ -7,4 +7,6 @@ indieweb:
     related_url: "https://getpocket.com/explore/item/mr-rogers-had-a-simple-set-of-rules-for-talking-to-children?utm_source=pocket-newtab"
 tags:
     - indieweb
+aliases:
+    - /2019/mr-rogers-had-simple-set-rules-talking-children/
 ---
