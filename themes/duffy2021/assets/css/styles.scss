@@ -499,7 +499,6 @@ footer {
 
   ul.social-links {
     list-style: none;
-    // font-size: 1.2rem;
     margin: 1.2rem 0;
     padding: 0;
 
@@ -567,6 +566,18 @@ footer {
         }
       }
     }
+  }
+
+  footer {
+
+    ul.site-links {
+      margin-top: 1rem;
+
+      li {
+        display: inline;
+      }
+    }
+
   }
 
 }
