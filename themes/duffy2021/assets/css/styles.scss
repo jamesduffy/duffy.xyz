@@ -112,7 +112,7 @@ p {
 a {
   color: var(--link-color);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
 
   transition: all var(--transition-time);
 
@@ -424,7 +424,7 @@ article {
     padding: 0px;
     display: block;
 
-    font-weight: 700;
+    font-weight: 400;
     font-family: var(--font-serif);
 
     li {
@@ -699,7 +699,7 @@ body.dark-theme {
 
     border-radius: 0px 0px 10px 10px;
     font-family: var(--font-serif);
-    font-weight: bold;
+    font-weight: 400;
     font-size: 30px;
     margin-top: -250px;
     height: 40px;
