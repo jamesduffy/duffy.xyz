@@ -13,7 +13,7 @@
 
     {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
     {{ with $img }}
-       {{ $big := .Resize "1500x" }}
+       {{ $big := .Resize "1000x" }}
        {{ $small := $big.Resize "750x" }}
         <img srcset="{{ $small.RelPermalink }} 1x, {{ $big.RelPermalink }} 2x" alt="{{ $img.Title }}" width="{{ $big.Width }}" class="">
     {{ end }}
@@ -45,7 +45,7 @@
     {{ if isset .Params "tags" }}
     <ul class="tags">
         {{ range .Params.tags }}
-        <li><a class="tag" href="/tags/{{ . }}">{{ . }}</a></li>
+        <li><a class="tag p-category" href="/tags/{{ . }}">{{ . }}</a></li>
         {{ end }}
     </ul>
     {{ end }}
