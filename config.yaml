@@ -2,12 +2,13 @@
 baseURL: https://duffy.xyz/
 languageCode: en-us
 title: James Duffy
-theme: simple
+theme: duffy2021
 
 enableGitInfo: true
 
 author:
   name: James Duffy
+  description: I'm Duffy, a Devops Engineer writing code for fun and profit.
   twitter: duffy0
   instagram: duffy0
   flickr: dffy
@@ -15,10 +16,12 @@ author:
   github: jamesduffy
   keybase: dffy
 
-taxonomy:
+taxonomies:
   tag: tags
 
 bloggroupby: "year"
+
+relativeURLs: true
 
 permalinks:
   posts: /:year/:slug/
@@ -29,8 +32,8 @@ menu:
     name: About
     url: /about/
     weight: -200
-  - identifier: archive
-    name: Archive
+  - identifier: blog
+    name: Blog
     url: /archive/
     weight: -100
   - identifier: photography
@@ -38,8 +41,41 @@ menu:
     url: /photography/
     weight: -90
 
+  footer:
+  - identifier: about
+    name: About
+    url: /about/
+    weight: -200
+  - identifier: blog
+    name: Blog
+    url: /archive/
+    weight: -100
+  - identifier: photography
+    name: Photography
+    url: /photography/
+    weight: -90
+  - identifier: notes
+    name: Notes
+    url: /notes/
+    weight: -90
+  - identifier: changelog
+    name: Changelog
+    url: /changelog/
+    weight: -90
+
 markup:
   tableOfContents:
     endLevel: 3
     ordered: false
     startLevel: 1
+
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    style: dracula
+    tabWidth: 4

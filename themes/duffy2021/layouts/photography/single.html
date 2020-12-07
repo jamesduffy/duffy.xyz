@@ -15,7 +15,7 @@
 <div id="macy-container">
 {{ $images := .Page.Resources.ByType "image" }}
 {{ range $images }}
-    {{ $image := .Resize "1280x q90" }}
+    {{ $image := .Resize "1000x q80" }}
     <a data-fslightbox="gallery" href="{{ $image.Permalink }}">
         <img src="{{ $image.Permalink }}">
     </a>

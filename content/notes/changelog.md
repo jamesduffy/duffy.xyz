@@ -7,6 +7,10 @@ aliases:
     - /changelog/
 ---
 
+## December 6, 2020
+- Redesign site around Hugo again
+- Make significant content updates pretty much everywhere
+
 ## November 3, 2019
 - Migrate content to Django based website and stop using hugo
 
