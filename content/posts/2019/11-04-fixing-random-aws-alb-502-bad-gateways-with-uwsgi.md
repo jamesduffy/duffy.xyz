@@ -7,5 +7,6 @@ indieweb:
     related_url: "https://medium.com/@gabriel.m.troy/aws-alb-docker-uwsgi-502-bad-gateway-16d0a36f6240"
 tags:
     - indieweb
+    - devops
 ---
 This articled helped me figure out why I was getting random 502 errors when using uWSGI behind an AWS ALB.

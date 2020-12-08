@@ -7,5 +7,6 @@ indieweb:
     related_url: "https://learnk8s.io/blog/kubernetes-chaos-engineering-lessons-learned/"
 tags:
     - indieweb
+    - devops
 ---
 This article helped troubleshoot some hard to replicate issues I had in Kubernetes during deployments/scaling events.

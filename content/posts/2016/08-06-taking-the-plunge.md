@@ -3,6 +3,8 @@ title: "Taking the Plunge"
 date: 2016-08-06 03:00:00
 aliases:
     - /journal/2016/taking-the-plunge/
+tags:
+    - devops
 ---
 
 Today was my last day working for Track Revenue. It was my first job after graduating from California State University, Stanislaus. I learned a lot in the 18 months as part of the Software Engineering team. I was challenged and there were struggles, but ultimately I came out better than I was before.
