@@ -15,6 +15,11 @@ sections:
   create: all
   match: "**/*"
 - type: directory
+  path: content/notes
+  label: Notes
+  create: all
+  match: "**/*"
+- type: directory
   path: content/photography
   label: Photography
   create: all
