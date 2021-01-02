@@ -6,7 +6,7 @@ clean:
 	rm -r public/
 
 run:
-	hugo --buildDrafts --watch serve
+	hugo --buildDrafts --buildFuture --watch serve
 
 run-live:
 	hugo --watch serve
